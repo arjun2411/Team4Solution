@@ -1,0 +1,30 @@
+html {
+    @media (max-width: 1024px) {
+        font-size: 80%;
+    }
+}
+
+body {
+    font-family: $ff-rht;
+    font-size: $txt-16;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+    transition: all 0.15s ease;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+        opacity: .8;
+    }
+}
+
+img {
+    max-width: 100%;
+}
