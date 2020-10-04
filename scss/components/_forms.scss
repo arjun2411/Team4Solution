@@ -1,0 +1,12 @@
+.form-control {
+    border-radius: 20px;
+    padding-left: $txt-20;
+}
+
+select {
+    appearance: none;
+    padding-right: 30px !important;
+    background-image: url(../images/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}

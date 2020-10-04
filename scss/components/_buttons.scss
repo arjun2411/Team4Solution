@@ -1,24 +1,45 @@
-.orange-btn {
-    padding: $txt-10 $txt-24;
-    color: $white;
-    background: linear-gradient(270deg, #F6821F 50%, #F5A45F 100%);
-    border-radius: 20px;
+.btn {
+    font-family: $ff-rhd;
+    transition: all 0.3s ease 0s;
 
-    &:hover {
-        background: linear-gradient(270deg, #0570D8 50%, #3599FB 100%);
+    &-primary {
         color: $white;
-    }
-}
-
-.blue-btn {
-    padding: $txt-10 $txt-24;
-    color: $white;
-
-    background: linear-gradient(270deg, #0570D8 50%, #3599FB 100%);
-    border-radius: 20px;
-
-    &:hover {
         background: linear-gradient(270deg, #F6821F 50%, #F5A45F 100%);
-        color: $white;
+        border-radius: 40px;
+        padding: 0 $txt-24;
+        font-size: $txt-16;
+        font-weight: $font-medium;
+        min-height: $txt-40;
+        display: flex;
+        align-items: center;
+        border: none !important;
+        justify-content: center;
+
+        &:hover,
+        &:focus {
+            background: linear-gradient(270deg, #0570D8 50%, #3599FB 100%);
+            color: $white;
+        }
     }
+
+    &-secondary {
+        color: $white;
+        background: linear-gradient(270deg, #0570D8 50%, #3599FB 100%);
+        border-radius: 40px;
+        padding: 0 $txt-24;
+        font-size: $txt-16;
+        font-weight: $font-medium;
+        min-height: $txt-40;
+        display: flex;
+        align-items: center;
+        border: none !important;
+        justify-content: center;
+
+        &:hover,
+        &:focus {
+            background: linear-gradient(270deg, #F6821F 50%, #F5A45F 100%);
+            color: $white;
+        }
+    }
+
 }
