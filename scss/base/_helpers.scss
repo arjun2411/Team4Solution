@@ -1,0 +1,24 @@
+// list syle check
+.list-style-check {
+    padding: 0;
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        i {
+            color: $orange;
+            border: 1px solid $orange;
+            border-radius: 50%;
+            width: $txt-16;
+            height: $txt-16;
+            font-size: $txt-12;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: $txt-10;
+
+        }
+    }
+}
