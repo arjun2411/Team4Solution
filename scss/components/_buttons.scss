@@ -1,0 +1,24 @@
+.orange-btn {
+    padding: $txt-10 $txt-24;
+    color: $white;
+    background: linear-gradient(270deg, #F6821F 50%, #F5A45F 100%);
+    border-radius: 20px;
+
+    &:hover {
+        background: linear-gradient(270deg, #0570D8 50%, #3599FB 100%);
+        color: $white;
+    }
+}
+
+.blue-btn {
+    padding: $txt-10 $txt-24;
+    color: $white;
+
+    background: linear-gradient(270deg, #0570D8 50%, #3599FB 100%);
+    border-radius: 20px;
+
+    &:hover {
+        background: linear-gradient(270deg, #F6821F 50%, #F5A45F 100%);
+        color: $white;
+    }
+}

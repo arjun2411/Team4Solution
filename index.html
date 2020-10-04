@@ -17,20 +17,658 @@
     />
 
     <!-- Font styles -->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap");
-    </style>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
-    <title>Hello, world!</title>
+    <!-- custom css -->
+    <link href="css/main.css" rel="stylesheet" />
+
+    <title>team4solution</title>
   </head>
 
   <body>
-    <h1>Hello, world! This is arjun</h1>
+    <div class="d-flex flex-column tfs-wrapper">
+      <header class="tfs-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-xl">
+            <a class="navbar-brand" href="#"><img src="images/logo.svg" /></a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> About us </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Technology</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Our Work </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="tfs-main">
+        <h1>main body goes here Arjun</h1>
+        <div class="tellus-section">
+          <div class="tellus-section--inner">
+          <div class="container-xl">
+           
+            <div class="row">
+              <div class="col-md-7 align-self-center">
+                 <h2 class="heading text-center">Tell Us About Your Project</h2>
+                <p class="text-center">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+                <div
+                  class="project-number d-flex flex-wrap justify-content-center"
+                >
+                  <div class="project-number--list">
+                    250 +<span>Applications developed and design</span>
+                  </div>
+                  <div class="project-number--list">
+                    365 +
+<span>Projects Completed/span>
+                  </div>
+                  <div class="project-number--list">
+                    305 +<span>Happy Customers</span>
+                  </div>
+                </div>
+                <div class="awards">
+                  <h3 class="text-center">Awards & Recognitions</h3>
+                    <div
+                  class="awards-logo d-flex flex-wrap justify-content-center"
+                >
+              <div class="awards-logo--list"><img src="images/badge-1.svg"/></div>
+              <div class="awards-logo--list"><img src="images/badge-2.svg"/></div>
+              <div class="awards-logo--list"><img src="images/badge-3.svg"/></div>
+              <div class="awards-logo--list"><img src="images/badge-4.svg"/></div>
+              <div class="awards-logo--list"><img src="images/badge-5.svg"/></div>
+              </div>
+                </div>
+              </div>
+              <div class="col-md-4 align-self-center ml-auto">
+                <form>
+                  <h2>Talk To Our Team</h2>
+                  <div class="input-group">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Full Name"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Full Name"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Full Name"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Full Name"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="orange-btn">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <div class="testimonial-section">
+          <div class="container-xl">
+            <h2 class="heading text-center">
+              <span class="heading-subtitle d-flex justify-content-center"
+                ><em>what People Says about us</em></span
+              >
+
+              Reviews From Our Real Clients
+            </h2>
+
+            <div class="testimonial-section--contant">
+              <div
+                id="carouselExampleInterval"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="10000">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img src="images/client-img.jpg" alt="..." />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <p>
+                          “Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.“Lorem Ipsum is simply dummy text
+                          of the printing and typesetting industry.”
+                        </p>
+                        <span class="name"
+                          >John Doe
+                          <em>CEO, MGS</em>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item" data-interval="20000">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img src="images/client-img.jpg" alt="..." />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <p>
+                          “Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.“Lorem Ipsum is simply dummy text
+                          of the printing and typesetting industry.”
+                        </p>
+                        <span class="name"
+                          >John Doe
+                          <em>CEO, MGS</em>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleInterval"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleInterval"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="testimonial-section--logos">
+              <div class="d-flex flex-wrap justify-content-center">
+                <div class="testimonial-section--logo">
+                  <img src="images/client-logo1.png" />
+                </div>
+                <div class="testimonial-section--logo">
+                  <img src="images/client-logo2.png" />
+                </div>
+                <div class="testimonial-section--logo">
+                  <img src="images/client-logo3.png" />
+                </div>
+                <div class="testimonial-section--logo">
+                  <img src="images/client-logo4.png" />
+                </div>
+                <div class="testimonial-section--logo">
+                  <img src="images/client-logo2.png" />
+                </div>
+                <div class="testimonial-section--logo">
+                  <img src="images/client-logo4.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-section">
+          <div class="container-xl">
+            <h2 class="heading text-center">
+              <span class="heading-subtitle d-flex justify-content-center"
+                ><em>KNOW MORE OUR FEATURES</em></span
+              >
+
+              Our Blog
+            </h2>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="white-box">
+                  <div class="blog-image">
+                    <image src="images/blog-img1.jpg" />
+                  </div>
+
+                  <div class="white-box--inner">
+                    <div class="date">April 20, 2020</div>
+
+                    <h2>
+                      <a href="#"
+                        >Fintech Mobile App Development 2020: Cost, Features,
+                        Technology</a
+                      >
+                    </h2>
+                    <p>
+                      Fintech Mobile App Development 2020: Cost, Features,
+                      Technology Stack & More Fintech Mobile App Development
+                      2020: Cost, Features, Techn...
+                    </p>
+                    <div class="read-more">
+                      <a harf="#">Read More <span>&#x2192;</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="white-box">
+                  <div class="blog-image">
+                    <image src="images/blog-img2.jpg" />
+                  </div>
+
+                  <div class="white-box--inner">
+                    <div class="date">April 20, 2020</div>
+
+                    <h2>
+                      <a href="#"
+                        >Fintech Mobile App Development 2020: Cost, Features,
+                        Technology</a
+                      >
+                    </h2>
+                    <p>
+                      Fintech Mobile App Development 2020: Cost, Features,
+                      Technology Stack & More Fintech Mobile App Development
+                      2020: Cost, Features, Techn...
+                    </p>
+                    <div class="read-more">
+                      <a harf="#">Read More <span>&#x2192;</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="white-box">
+                  <div class="blog-image">
+                    <image src="images/blog-img3.jpg" />
+                  </div>
+
+                  <div class="white-box--inner">
+                    <div class="date">April 20, 2020</div>
+
+                    <h2>
+                      <a href="#"
+                        >Fintech Mobile App Development 2020: Cost, Features,
+                        Technology</a
+                      >
+                    </h2>
+                    <p>
+                      Fintech Mobile App Development 2020: Cost, Features,
+                      Technology Stack & More Fintech Mobile App Development
+                      2020: Cost, Features, Techn...
+                    </p>
+                    <div class="read-more">
+                      <a harf="#">Read More <span>&#x2192;</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="unstopable-section">
+          <div class="container-xl">
+            <h2 class="heading text-center">
+              <span class="heading-subtitle d-flex justify-content-center"
+                ><em>Grow Your Business </em></span
+              >
+              We' re Unstoppable
+            </h2>
+            <div class="d-flex flex-wrap justify-content-center">
+              <div class="unstopable-section--logo zoom">
+                <img src="images/un-logo1.jpg" />
+              </div>
+              <div class="unstopable-section--logo zoom">
+                <img src="images/un-logo2.jpg" />
+              </div>
+              <div class="unstopable-section--logo zoom">
+                <img src="images/un-logo3.jpg" />
+              </div>
+              <div class="unstopable-section--logo zoom">
+                <img src="images/un-logo4.jpg" />
+              </div>
+              <div class="unstopable-section--logo zoom">
+                <img src="images/un-logo5.jpg" />
+              </div>
+              <div class="unstopable-section--logo zoom">
+                <img src="images/un-logo6.jpg" />
+              </div>
+              <div class="unstopable-section--logo zoom">
+                <img src="images/un-logo7.jpg" />
+              </div>
+              <div class="unstopable-section--logo zoom">
+                <img src="images/un-logo8.jpg" />
+              </div>
+              <div class="unstopable-section--logo zoom">
+                <img src="images/un-logo9.jpg" />
+              </div>
+              <div class="unstopable-section--logo zoom">
+                <img src="images/un-logo10.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="engagement-section">
+          <div class="container-xl d-flex">
+            <div class="row">
+              <div class="col-md-6 align-self-center eng-leftpart">
+                <h2 class="heading text-left">
+                  <span class="heading-subtitle d-flex justify-content-left"
+                    ><em>CHOOSE YOUR PLAN </em></span
+                  >
+                  Engagement Model Of Your Choice
+                </h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+                <div class="button d-flex">
+                  <a href="" class="orange-btn">Lets Discuss With Us</a>
+                </div>
+              </div>
+              <div class="col-md-5 ml-auto align-self-center eng-rightpart">
+                <div class="whitebox-list d-flex">
+                  <div class="whitebox-list--img">
+                    <img src="images/eng-icon1.svg" />
+                  </div>
+                  <div class="align-self-center whitebox-list--inner">
+                    <h2>Part Time Hiring</h2>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text
+                    </p>
+                  </div>
+                </div>
+
+                <div class="whitebox-list d-flex">
+                  <div class="whitebox-list--img">
+                    <img src="images/eng-icon2.svg" />
+                  </div>
+                  <div class="align-self-center whitebox-list--inner">
+                    <h2>Part Time Hiring</h2>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text
+                    </p>
+                  </div>
+                </div>
+
+                <div class="whitebox-list d-flex">
+                  <div class="whitebox-list--img">
+                    <img src="images/eng-icon3.svg" />
+                  </div>
+                  <div class="align-self-center whitebox-list--inner">
+                    <h2>Part Time Hiring</h2>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="tfs-footer">
+        <div class="tfs-footer--primary">
+          <div class="container-xl">
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="tfs-footer--logo">
+                  <img src="images/footer-logo.svg" />
+                </div>
+                <div class="tfs-footer--contact-us">
+                  <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation">
+                        <a
+                          class="active"
+                          href="#tab1"
+                          aria-controls="tab1"
+                          role="tab"
+                          data-toggle="tab"
+                          ><img src="images/c-iocn1.svg"
+                        /></a>
+                      </li>
+                      <li role="presentation">
+                        <a
+                          href="#tab2"
+                          aria-controls="tab2"
+                          role="tab"
+                          data-toggle="tab"
+                          ><img src="images/c-iocn2.svg"
+                        /></a>
+                      </li>
+                      <li role="presentation">
+                        <a
+                          href="#tab3"
+                          aria-controls="tab3"
+                          role="tab"
+                          data-toggle="tab"
+                          ><img src="images/c-iocn3.svg"
+                        /></a>
+                      </li>
+                      <li role="presentation">
+                        <a
+                          href="#tab4"
+                          aria-controls="tab4"
+                          role="tab"
+                          data-toggle="tab"
+                          ><img src="images/c-iocn4.svg"
+                        /></a>
+                      </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="tab1">
+                        <address>
+                          1st Floor D-1/3 4, near Suyog Hospital, Konark
+                          <br />Vihar, Sambhagi Nagar, Dhankawadi, Pune,<br />
+                          Maharashtra- 411043
+                        </address>
+                        <address>
+                          Tel - <a href="tel:9636085339">+91 9636085339</a>
+                          <br />
+                          Email -
+                          <a href="mailto:contact@team4solution.com"
+                            >contact@team4solution.com</a
+                          >
+                        </address>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="tab2">
+                        <address>
+                          7, Misiaouli & Kavazoglou 93, <br />Limassol 3016,
+                          Cyprus
+                        </address>
+
+                        <address>
+                          Email -
+                          <a href="mailto:contact@team4solution.com"
+                            >contact@team4solution.com</a
+                          >
+                        </address>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="tab3">
+                        <address>
+                          10685-B Hazelhurst Dr. #27263 Houston,<br />
+                          TX 77043
+                        </address>
+                        <address>
+                          Tel -
+                          <a href="tel:+1 (269) 793-9193">+1 (269) 793-9193</a
+                          ><br />
+                          Email -
+                          <a href="mailto:contact@team4solution.com"
+                            >contact@team4solution.com</a
+                          >
+                        </address>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="tab4">
+                        <address>
+                          Scott sentral service suites, <br />28 Jalan Scott
+                          Brickfields Kuala<br />
+                          Lumpur 50470 Malaysia
+                        </address>
+                        <address>
+                          Tel -
+                          <a href="tel:+60 11-6360 4643">+60 11-6360 4643</a
+                          ><br />
+                          Email -
+                          <a href="mailto:contact@team4solution.com"
+                            >contact@team4solution.com</a
+                          >
+                        </address>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tfs-footer--social-icons">
+                  <nav class="nav">
+                    <a class="nav-link" href="#"
+                      ><img src="images/facebook.svg"
+                    /></a>
+                    <a class="nav-link" href="#"
+                      ><img src="images/twitter.svg"
+                    /></a>
+                    <a class="nav-link" href="#"
+                      ><img src="images/instagram.svg"
+                    /></a>
+                    <a class="nav-link" href="#"
+                      ><img src="images/inkedin.svg"
+                    /></a>
+                  </nav>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-8 tfs-footer--list">
+                <div class="row">
+                  <div class="col-md-6 col-lg-4">
+                    <h3>Services</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="">Product Strategy</a></li>
+                      <li><a href="">Product Engineering</a></li>
+                      <li><a href="">Architecture</a></li>
+                      <li><a href="">UX / UI Design</a></li>
+                      <li><a href="">App Development</a></li>
+                      <li><a href="">QA & Testing</a></li>
+                      <li><a href="">Cyber Security</a></li>
+                      <li><a href="">Web Development</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="">About</a></li>
+                      <li><a href="">Team</a></li>
+                      <li><a href="">Careers</a></li>
+                      <li><a href="">Clients</a></li>
+                      <li><a href="">Blog</a></li>
+                      <li><a href="">News</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="">PHP Development</a></li>
+                      <li><a href="">Python Development</a></li>
+                      <li><a href="">ROR Development</a></li>
+                      <li><a href="">Java Development</a></li>
+                      <li><a href="">ASP.Net Development</a></li>
+                      <li><a href="">Node JS Development</a></li>
+                      <li><a href="">React Native Development</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tfs-footer--copyright">
+          © 2019 Team4Solution. All Rights Reserved.
+        </div>
+      </footer>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

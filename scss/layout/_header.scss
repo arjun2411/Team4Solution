@@ -1,0 +1,23 @@
+.tfs-header {
+    background-color: $blue;
+    color: white;
+    font-family: $ff-rhd;
+    font-size: $txt-16;
+    font-weight: $font-bold;
+
+    .navbar-brand {
+        max-width: $txt-50*3 + $txt-20;
+    }
+
+    .navbar-light {
+        background: $white;
+        height: $txt-50*2;
+
+        .navbar-nav .nav-link {
+            color: $grey-lt2;
+            opacity: 100;
+        }
+
+    }
+
+}
