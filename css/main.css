@@ -3466,7 +3466,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 .hero-section .carousel-control-next-icon, .hero-section .carousel-control-prev-icon { width: 3.125rem; height: 3.125rem; }
 
-.hero-section .carousel-item .carousel-control-prev-icon { background: url(../images/slider-left-arrow.svg); }
+.hero-section .carousel-control-prev-icon { background: url(../images/slider-left-arrow.svg); }
 
 .hero-section .carousel-control-next-icon { background: url(../images/slider-right-arrow2.svg); }
 
