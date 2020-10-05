@@ -1,3 +1,9 @@
+@-webkit-keyframes shrink { 0% { background-size: 100% 100%; }
+  100% { background-size: 110% 110%; } }
+
+@keyframes shrink { 0% { background-size: 100% 100%; }
+  100% { background-size: 110% 110%; } }
+
 /*! Material Design Iconic Font by Sergey Kupletsky (@zavoloklom) - http://zavoloklom.github.io/material-design-iconic-font/ License - http://zavoloklom.github.io/material-design-iconic-font/license (Font: SIL OFL 1.1, CSS: MIT License) */
 @font-face { font-family: 'Material-Design-Iconic-Font'; src: url("../fonts/Material-Design-Iconic-Font.woff2?v=2.2.0") format("woff2"), url("../fonts/Material-Design-Iconic-Font.woff?v=2.2.0") format("woff"), url("../fonts/Material-Design-Iconic-Font.ttf?v=2.2.0") format("truetype"); font-weight: normal; font-style: normal; }
 
@@ -3446,6 +3452,12 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 .tfs-wrapper { min-height: 100vh; }
 
+.tfs-main { padding-top: 100px; }
+
+@media screen and (max-width: 1200px) { .tfs-main { padding-top: 80px; } }
+
+@media screen and (max-width: 990px) { .tfs-main { padding-top: 60px; } }
+
 .container-xl { max-width: 1300px; }
 
 .heading { font-size: 2.25rem; color: #0570D8; font-weight: 700; margin-bottom: 2.188rem; }
@@ -3464,9 +3476,11 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 .hero-section .text-box { position: absolute; top: 50%; left: 15%; right: 15%; color: #fff; text-align: center; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 
+.hero-section .carousel-item { min-height: calc(80vh - 100px); background-repeat: no-repeat; background-size: cover; -webkit-animation: shrink 15s infinite alternate; animation: shrink 15s infinite alternate; background-position: center center; }
+
 .hero-section .carousel-control-next-icon, .hero-section .carousel-control-prev-icon { width: 3.125rem; height: 3.125rem; }
 
-.hero-section .carousel-item img { width: 100%; }
+.hero-section .carousel-item img { width: 100%; -o-object-fit: cover; object-fit: cover; }
 
 .hero-section .carousel-control-prev-icon { background: url(../images/slider-left-arrow.svg); }
 
@@ -3618,19 +3632,30 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 .white-box .date { font-size: 1rem; color: #A5B7D2; font-weight: 700; margin-bottom: 0.313rem; }
 
-.tfs-header { background-color: #0570D8; color: white; font-family: "Red Hat Display", sans-serif; font-size: 1rem; font-weight: 700; }
+.tfs-header { background-color: #0570D8; color: white; font-family: "Red Hat Display", sans-serif; font-size: 1rem; font-weight: 700; position: fixed; z-index: 999; width: 100%; top: 0; -webkit-box-shadow: 0px -16px 44px rgba(63, 61, 86, 0.47); box-shadow: 0px -16px 44px rgba(63, 61, 86, 0.47); }
 
 .tfs-header .container-xl { position: relative; }
 
 .tfs-header .navbar-brand { max-width: 10.625rem; }
 
-.tfs-header .navbar-light { background: #FFFFFF; height: 6.25rem; }
+@media screen and (max-width: 990px) { .tfs-header .navbar-brand { max-width: 8.125rem; } }
+
+.tfs-header .navbar-light { background: #FFFFFF; height: 100px; }
+
+@media screen and (max-width: 1200px) { .tfs-header .navbar-light { height: 80px; } }
+
+@media screen and (max-width: 990px) { .tfs-header .navbar-light { height: 60px; } }
 
 .tfs-header .navbar-light .desktop-menu .dropdown { position: static; }
 
-.tfs-header .navbar-light .desktop-menu .dropdown:hover .dropdown-menu { display: block; }
+@media screen and (min-width: 990px) { .tfs-header .navbar-light .desktop-menu .dropdown:hover .dropdown-menu { display: block; } }
 
-.tfs-header .navbar-light .desktop-menu .dropdown-menu { width: 100%; padding: 0.938rem; background: #FFFFFF url(../images/unstoppable.svg) left bottom no-repeat; background-size: 100% auto; padding-bottom: 100px; margin-top: -2px; }
+.tfs-header .navbar-light .desktop-menu .dropdown-menu { width: 100%; padding: 0.938rem; background-size: 100% auto; margin-top: -2px; }
+
+@media screen and (min-width: 990px) { .tfs-header .navbar-light .desktop-menu .dropdown-menu { padding-bottom: 100px; background: #FFFFFF url(../images/unstoppable.svg) left bottom no-repeat; } }
+
+@media screen and (max-width: 990px) { .tfs-header .navbar-light .desktop-menu .dropdown-menu { background-color: transparent; padding: 0; }
+  .tfs-header .navbar-light .desktop-menu .dropdown-menu a { color: white !important; } }
 
 .tfs-header .navbar-light .desktop-menu .dropdown-menu .list-style-check li { padding: 0.313rem 0; }
 
@@ -3638,13 +3663,28 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 .tfs-header .navbar-light .desktop-menu .dropdown-menu .list-style-check li a:hover { color: #0570D8; }
 
-.tfs-header .navbar-light .desktop-menu .nav-item { padding: 32px 1.25rem; }
+.tfs-header .navbar-light .desktop-menu .nav-item { padding: 1.875rem 1.25rem; }
+
+@media screen and (max-width: 990px) { .tfs-header .navbar-light .desktop-menu .nav-item { padding: 0.938rem 1.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.3); } }
 
 .tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link { color: #343434; opacity: 100; padding: 0.313rem; border-bottom: 4px solid transparent; }
 
+@media screen and (max-width: 990px) { .tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link { font-size: 1.25rem; color: white; border-bottom: none; } }
+
 .tfs-header .navbar-light .desktop-menu .navbar-nav .active > .nav-link, .tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link.active, .tfs-header .navbar-light .desktop-menu .navbar-nav .active > .nav-link:hover, .tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link.active:hover, .tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link:hover { border-bottom: 4px solid #F6821F; }
 
+@media screen and (max-width: 990px) { .tfs-header .navbar-light .desktop-menu .navbar-nav .active > .nav-link, .tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link.active, .tfs-header .navbar-light .desktop-menu .navbar-nav .active > .nav-link:hover, .tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link.active:hover, .tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link:hover { border-bottom: 0; } }
+
 .tfs-header .navbar-light .desktop-menu .contact-us .nav-link { color: #FFFFFF; padding: 0.313rem 1.25rem; }
+
+.tfs-header .navbar-light .navbar-toggler { position: relative; z-index: 999; outline: none !important; border: none !important; }
+
+.tfs-header .navbar-light .navbar-toggler-icon { background-image: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.tfs-header .navbar-light .navbar-toggler-icon::after { content: '\f197'; display: block; font-family: "Material-Design-Iconic-Font"; font-size: 2.5rem; color: #616570; }
+
+@media screen and (max-width: 990px) { .tfs-header .navbar-light .navbar-collapse { background-color: #1A1B1E; z-index: 99; height: 100%; top: 0; position: fixed; padding-top: 80px; right: 0; width: 320px; -webkit-transition: all ease .3s; -o-transition: all ease .3s; transition: all ease .3s; overflow: auto; }
+  .tfs-header .navbar-light .navbar-collapse:not(.show) { -webkit-transform: translate(320px); -ms-transform: translate(320px); transform: translate(320px); display: block; } }
 
 .tfs-footer { background-color: #0570D8; color: white; margin-top: auto; padding-top: 6.25rem; background-image: url(../images/footer-bg-1.svg), url(../images/footer-bg-2.svg); background-position: left top, right bottom; background-repeat: no-repeat; font-size: 1rem; }
 

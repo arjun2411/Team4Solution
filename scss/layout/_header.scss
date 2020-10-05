@@ -4,6 +4,11 @@
     font-family: $ff-rhd;
     font-size: $txt-16;
     font-weight: $font-bold;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px -16px 44px rgba(63, 61, 86, 0.47);
 
     .container-xl {
         position: relative;
@@ -11,28 +16,58 @@
 
     .navbar-brand {
         max-width: $txt-50*3 + $txt-20;
+
+        @media screen and (max-width: 990px) {
+            max-width: $txt-50*2 + $txt-30;
+        }
     }
 
     .navbar-light {
         background: $white;
-        height: $txt-50*2;
+        height: 100px;
+
+        @media screen and (max-width: 1200px) {
+            height: 80px;
+        }
+
+        @media screen and (max-width: 990px) {
+            height: 60px;
+        }
 
         .desktop-menu {
             .dropdown {
                 position: static;
 
                 &:hover .dropdown-menu {
-                    display: block;
+                    @media screen and (min-width: 990px) {
+                        display: block;
+                    }
                 }
+
+
             }
 
             .dropdown-menu {
                 width: 100%;
                 padding: $txt-15;
-                background: #FFFFFF url(../images/unstoppable.svg) left bottom no-repeat;
+
                 background-size: 100% auto;
-                padding-bottom: 100px;
+
                 margin-top: -2px;
+
+                @media screen and (min-width: 990px) {
+                    padding-bottom: 100px;
+                    background: #FFFFFF url(../images/unstoppable.svg) left bottom no-repeat;
+                }
+
+                @media screen and (max-width: 990px) {
+                    background-color: transparent;
+                    padding: 0;
+
+                    a {
+                        color: white !important;
+                    }
+                }
 
                 .list-style-check {
                     li {
@@ -53,7 +88,12 @@
             }
 
             .nav-item {
-                padding: 32px $txt-20;
+                padding: $txt-30 $txt-20;
+
+                @media screen and (max-width: 990px) {
+                    padding: $txt-15 $txt-20;
+                    border-bottom: 1px solid rgba($color: white, $alpha: .3)
+                }
 
             }
 
@@ -61,8 +101,13 @@
                 color: $grey-lt2;
                 opacity: 100;
                 padding: $txt-5;
-
                 border-bottom: 4px solid transparent;
+
+                @media screen and (max-width: 990px) {
+                    font-size: $txt-20;
+                    color: white;
+                    border-bottom: none;
+                }
 
             }
 
@@ -72,11 +117,57 @@
             .navbar-nav .nav-link.active:hover,
             .navbar-nav .nav-link:hover {
                 border-bottom: 4px solid $orange;
+
+                @media screen and (max-width: 990px) {
+                    border-bottom: 0;
+                }
             }
 
             .contact-us .nav-link {
                 color: #FFFFFF;
                 padding: $txt-5 $txt-20;
+            }
+        }
+
+        .navbar-toggler {
+            position: relative;
+            z-index: 999;
+            outline: none !important;
+            border: none !important;
+
+            &-icon {
+                background-image: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &::after {
+                    content: '\f197';
+                    display: block;
+                    font-family: $icons;
+                    font-size: $txt-40;
+                    color: lighten($color: $dark-grey, $amount: 30%)
+                }
+            }
+        }
+
+        .navbar-collapse {
+            @media screen and (max-width: 990px) {
+                background-color: $dark-grey;
+                z-index: 99;
+                height: 100%;
+                top: 0;
+                position: fixed;
+                padding-top: 80px;
+                right: 0;
+                width: 320px;
+                transition: all ease .3s;
+                overflow: auto;
+
+                &:not(.show) {
+                    transform: translate(320px);
+                    display: block;
+                }
             }
         }
 
