@@ -34,3 +34,13 @@ document.getElementById('moar').onclick = function () {
 $('.carousel').carousel({
 	interval: 1000
 })
+
+
+// main menu
+$(function () {
+	$('.toggle-menu').click(function () {
+		$('.exo-menu').toggleClass('display');
+
+	});
+
+});
