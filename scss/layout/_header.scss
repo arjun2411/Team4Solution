@@ -5,6 +5,10 @@
     font-size: $txt-16;
     font-weight: $font-bold;
 
+    .container-xl {
+        position: relative;
+    }
+
     .navbar-brand {
         max-width: $txt-50*3 + $txt-20;
     }
@@ -13,9 +17,62 @@
         background: $white;
         height: $txt-50*2;
 
-        .navbar-nav .nav-link {
-            color: $grey-lt2;
-            opacity: 100;
+        .desktop-menu {
+            .dropdown {
+                position: static;
+
+                &:hover .dropdown-menu {
+                    display: block;
+                }
+            }
+
+            .dropdown-menu {
+                width: 100%;
+                padding: $txt-15;
+                background: #FFFFFF url(../images/unstoppable.svg) left bottom no-repeat;
+                background-size: 100% auto;
+                padding-bottom: 100px;
+                margin-top: -2px;
+
+                .list-style-check {
+                    li {
+                        padding: $txt-5 0;
+
+                        a {
+                            font-weight: $font-medium;
+                            color: $grey-lt2;
+
+                            &:hover {
+                                color: $blue;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+
+            .nav-item {
+                padding: 32px $txt-20;
+
+            }
+
+            .navbar-nav .nav-link {
+                color: $grey-lt2;
+                opacity: 100;
+                padding: $txt-5;
+
+                border-bottom: 4px solid transparent;
+
+            }
+
+            .navbar-nav .active>.nav-link,
+            .navbar-nav .nav-link.active,
+            .navbar-nav .active>.nav-link:hover,
+            .navbar-nav .nav-link.active:hover,
+            .navbar-nav .nav-link:hover {
+                border-bottom: 4px solid $orange;
+            }
         }
 
     }

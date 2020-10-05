@@ -3422,13 +3422,23 @@ img { max-width: 100%; }
 
 .btn { font-family: "Red Hat Display", sans-serif; -webkit-transition: all 0.3s ease 0s; -o-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; }
 
-.btn-primary { color: #FFFFFF; background: -webkit-gradient(linear, right top, left top, color-stop(50%, #F6821F), to(#F5A45F)); background: -webkit-linear-gradient(right, #F6821F 50%, #F5A45F 100%); background: -o-linear-gradient(right, #F6821F 50%, #F5A45F 100%); background: linear-gradient(270deg, #F6821F 50%, #F5A45F 100%); border-radius: 40px; padding: 0 1.5rem; font-size: 1rem; font-weight: 500; min-height: 2.5rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border: none !important; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.btn:hover, .btn:focus, .btn:active { opacity: 100; }
+
+.btn-primary { color: #FFFFFF; background: -webkit-gradient(linear, right top, left top, color-stop(50%, #F6821F), to(#F5A45F)); background: -webkit-linear-gradient(right, #F6821F 50%, #F5A45F 100%); background: -o-linear-gradient(right, #F6821F 50%, #F5A45F 100%); background: linear-gradient(270deg, #F6821F 50%, #F5A45F 100%); border-radius: 40px; padding: 0 1.5rem; font-size: 1rem; font-weight: 500; min-height: 2.5rem; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border: none !important; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 .btn-primary:hover, .btn-primary:focus { background: -webkit-gradient(linear, right top, left top, color-stop(50%, #0570D8), to(#3599FB)); background: -webkit-linear-gradient(right, #0570D8 50%, #3599FB 100%); background: -o-linear-gradient(right, #0570D8 50%, #3599FB 100%); background: linear-gradient(270deg, #0570D8 50%, #3599FB 100%); color: #FFFFFF; }
 
-.btn-secondary { color: #FFFFFF; background: -webkit-gradient(linear, right top, left top, color-stop(50%, #0570D8), to(#3599FB)); background: -webkit-linear-gradient(right, #0570D8 50%, #3599FB 100%); background: -o-linear-gradient(right, #0570D8 50%, #3599FB 100%); background: linear-gradient(270deg, #0570D8 50%, #3599FB 100%); border-radius: 40px; padding: 0 1.5rem; font-size: 1rem; font-weight: 500; min-height: 2.5rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border: none !important; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.btn-secondary { color: #FFFFFF; background: -webkit-gradient(linear, right top, left top, color-stop(50%, #0570D8), to(#3599FB)); background: -webkit-linear-gradient(right, #0570D8 50%, #3599FB 100%); background: -o-linear-gradient(right, #0570D8 50%, #3599FB 100%); background: linear-gradient(270deg, #0570D8 50%, #3599FB 100%); border-radius: 40px; padding: 0 1.5rem; font-size: 1rem; font-weight: 500; min-height: 2.5rem; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border: none !important; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 .btn-secondary:hover, .btn-secondary:focus { background: -webkit-gradient(linear, right top, left top, color-stop(50%, #F6821F), to(#F5A45F)); background: -webkit-linear-gradient(right, #F6821F 50%, #F5A45F 100%); background: -o-linear-gradient(right, #F6821F 50%, #F5A45F 100%); background: linear-gradient(270deg, #F6821F 50%, #F5A45F 100%); color: #FFFFFF; }
+
+.btn-border { color: #FFFFFF; background: none; border-radius: 40px; padding: 0 1.5rem; font-size: 1rem; font-weight: 500; min-height: 2.5rem; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 1px solid #FFFFFF !important; }
+
+.btn-border:hover, .btn-border:focus { background: #FFFFFF; color: #0570D8; }
+
+.btn-light { color: #0570D8; background: #FFFFFF; border-radius: 40px; padding: 0 1.5rem; font-size: 1rem; font-weight: 500; min-height: 2.5rem; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 1px solid #FFFFFF !important; }
+
+.btn-light:hover, .btn-light:focus { background: none; color: #FFFFFF; }
 
 .form-control { border-radius: 20px; padding-left: 1.25rem; }
 
@@ -3448,6 +3458,18 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 .heading-subtitle em:after { background: #A5B7D2; position: absolute; width: 6px; height: 6px; content: ""; right: 0; top: 6px; border-radius: 50%; }
 
+.hero-section h1 { width: 100%; color: #FFFFFF; font-size: 3.75rem; }
+
+.hero-section .btn { margin: 0.625rem; }
+
+.hero-section .text-box { position: absolute; top: 50%; left: 15%; right: 15%; color: #fff; text-align: center; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+
+.hero-section .carousel-control-next-icon, .hero-section .carousel-control-prev-icon { width: 3.125rem; height: 3.125rem; }
+
+.hero-section .carousel-item .carousel-control-prev-icon { background: url(../images/slider-left-arrow.svg); }
+
+.hero-section .carousel-control-next-icon { background: url(../images/slider-right-arrow2.svg); }
+
 .latestProjects--section { padding-top: 3.125rem; background-image: url(../images/latest-project-top.svg), url(../images/projects-wave.svg); background-repeat: no-repeat, no-repeat; background-position: right top, bottom center; background-size: auto auto, 100% auto; }
 
 .latestProjects--section h2.heading { color: black; margin-bottom: 0; }
@@ -3465,6 +3487,36 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 .latestProjects--section .swiper-pagination-bullet-active { background: -webkit-gradient(linear, right top, left top, color-stop(50%, #0570D8), to(#3599FB)); background: -webkit-linear-gradient(right, #0570D8 50%, #3599FB 100%); background: -o-linear-gradient(right, #0570D8 50%, #3599FB 100%); background: linear-gradient(270deg, #0570D8 50%, #3599FB 100%); }
 
 .latestProjects--section .projects-img img { border-radius: 20px; -webkit-box-shadow: 0px 18px 44px 10px rgba(0, 0, 0, 0.15); box-shadow: 0px 18px 44px 10px rgba(0, 0, 0, 0.15); }
+
+.services--section { background-color: #FFFFFF; background-image: url(../images/services-bg1.svg), url(../images/services-bg2.svg); background-position: left bottom, right top; background-repeat: no-repeat, no-repeat; }
+
+.services--section .container-xl { margin-top: -70px; }
+
+.services--section .nav-tabs { border: none; }
+
+.services--section .nav-link { background: #FFFFFF; -webkit-box-shadow: 8px 8px 30px rgba(24, 71, 118, 0.13); box-shadow: 8px 8px 30px rgba(24, 71, 118, 0.13); border-radius: 0.938rem; border: none; padding: 1.125rem 1.5rem; margin-bottom: 0.313rem; }
+
+.services--section .nav-link .detail-block { color: #606060; padding-left: 1.5rem; }
+
+.services--section .nav-link .detail-block strong { color: #1A1B1E; font-size: 1.25rem; }
+
+.services--section .nav-link.active { border-bottom: 5px solid #0570D8; -webkit-box-shadow: 8px 8px 35px rgba(24, 71, 118, 0.5); box-shadow: 8px 8px 35px rgba(24, 71, 118, 0.5); margin-bottom: 0px; }
+
+.services--section a:hover, .services--section a:focus, .services--section a:active { opacity: 100; }
+
+.services--section .tab1 a { background: #FFFFFF url(../images/ser-shape.svg) right top no-repeat; }
+
+.services--section .tab2 a { background: #FFFFFF url(../images/ind-shape.svg) right bottom no-repeat; }
+
+.services--section .tab3 a { background: #FFFFFF url(../images/tech-shape.svg) right top no-repeat; }
+
+.services--section .tab-content { padding: 1.875rem 0; }
+
+.services-card { background: #F9F9FA; border-radius: 0.938rem; margin: 0.938rem 0; padding: 0.938rem 1.75rem; cursor: pointer; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-transition: all 0.3s ease 0s; -o-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; }
+
+.services-card:hover { -webkit-box-shadow: 0px 14px 30px 10px rgba(0, 0, 0, 0.1); box-shadow: 0px 14px 30px 10px rgba(0, 0, 0, 0.1); }
+
+.services-card--inner h3 { font-size: 1.25rem; color: black; margin-bottom: 0.938rem; }
 
 .tellus-section { background: url(../images/tell-us-bg.svg) left top no-repeat; background-size: cover; background-position: center; }
 
@@ -3566,11 +3618,29 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 .tfs-header { background-color: #0570D8; color: white; font-family: "Red Hat Display", sans-serif; font-size: 1rem; font-weight: 700; }
 
+.tfs-header .container-xl { position: relative; }
+
 .tfs-header .navbar-brand { max-width: 10.625rem; }
 
 .tfs-header .navbar-light { background: #FFFFFF; height: 6.25rem; }
 
-.tfs-header .navbar-light .navbar-nav .nav-link { color: #343434; opacity: 100; }
+.tfs-header .navbar-light .desktop-menu .dropdown { position: static; }
+
+.tfs-header .navbar-light .desktop-menu .dropdown:hover .dropdown-menu { display: block; }
+
+.tfs-header .navbar-light .desktop-menu .dropdown-menu { width: 100%; padding: 0.938rem; background: #FFFFFF url(../images/unstoppable.svg) left bottom no-repeat; background-size: 100% auto; padding-bottom: 100px; margin-top: -2px; }
+
+.tfs-header .navbar-light .desktop-menu .dropdown-menu .list-style-check li { padding: 0.313rem 0; }
+
+.tfs-header .navbar-light .desktop-menu .dropdown-menu .list-style-check li a { font-weight: 500; color: #343434; }
+
+.tfs-header .navbar-light .desktop-menu .dropdown-menu .list-style-check li a:hover { color: #0570D8; }
+
+.tfs-header .navbar-light .desktop-menu .nav-item { padding: 32px 1.25rem; }
+
+.tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link { color: #343434; opacity: 100; padding: 0.313rem; border-bottom: 4px solid transparent; }
+
+.tfs-header .navbar-light .desktop-menu .navbar-nav .active > .nav-link, .tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link.active, .tfs-header .navbar-light .desktop-menu .navbar-nav .active > .nav-link:hover, .tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link.active:hover, .tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link:hover { border-bottom: 4px solid #F6821F; }
 
 .tfs-footer { background-color: #0570D8; color: white; margin-top: auto; padding-top: 6.25rem; background-image: url(../images/footer-bg-1.svg), url(../images/footer-bg-2.svg); background-position: left top, right bottom; background-repeat: no-repeat; font-size: 1rem; }
 

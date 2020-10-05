@@ -50,6 +50,46 @@
     }
 }
 
+//@at-root
+.hero-section {
+    h1 {
+        width: 100%;
+        color: $white;
+        font-size: $txt-50+$txt-10;
+
+
+    }
+
+    .btn {
+        margin: $txt-10;
+    }
+
+    .text-box {
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        right: 15%;
+        color: #fff;
+        text-align: center;
+        transform: translateY(-50%);
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+
+        width: $txt-50;
+        height: $txt-50;
+
+    }
+
+    .carousel-item .carousel-control-prev-icon {
+        background: url(../images/slider-left-arrow.svg);
+    }
+
+    .carousel-control-next-icon {
+        background: url(../images/slider-right-arrow2.svg);
+    }
+}
 
 // Latest Projects section
 .latestProjects {
@@ -116,6 +156,106 @@
         }
     }
 }
+
+//services section
+.services--section {
+    background-color: $white;
+    background-image: url(../images/services-bg1.svg),
+        url(../images/services-bg2.svg);
+    background-position: left bottom, right top;
+    background-repeat: no-repeat, no-repeat;
+
+    .container-xl {
+        margin-top: -70px;
+    }
+
+    .nav-tabs {
+        border: none;
+    }
+
+    .nav-link {
+        background: #FFFFFF;
+        box-shadow: 8px 8px 30px rgba(24, 71, 118, 0.13);
+        border-radius: $txt-15;
+        border: none;
+        padding: $txt-18 $txt-24;
+        margin-bottom: $txt-5;
+
+
+        .detail-block {
+            color: $grey-lt;
+            padding-left: $txt-24;
+
+            strong {
+                color: $dark-grey;
+                font-size: $txt-20;
+            }
+        }
+    }
+
+
+    .nav-link.active {
+        border-bottom: 5px solid $blue;
+        box-shadow: 8px 8px 35px rgba(24, 71, 118, 0.5);
+        margin-bottom: 0px;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+        opacity: 100;
+    }
+
+    .tab1 {
+        a {
+            background: $white url(../images/ser-shape.svg) right top no-repeat;
+        }
+    }
+
+    .tab2 {
+        a {
+            background: $white url(../images/ind-shape.svg) right bottom no-repeat;
+        }
+
+    }
+
+    .tab3 {
+        a {
+            background: $white url(../images/tech-shape.svg) right top no-repeat;
+        }
+
+    }
+
+    .tab-content {
+        padding: $txt-30 0;
+    }
+
+
+}
+
+.services-card {
+    background: #F9F9FA;
+    border-radius: $txt-15;
+    margin: $txt-15 0;
+    padding: $txt-15 $txt-28;
+    cursor: pointer;
+    display: flex;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        box-shadow: 0px 14px 30px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &--inner {
+        h3 {
+            font-size: $txt-20;
+            color: black;
+            margin-bottom: $txt-15;
+        }
+    }
+}
+
+
 
 
 

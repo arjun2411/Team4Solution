@@ -20,10 +20,14 @@
 
   <!-- swiper min css2 -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Animated css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
   <!-- custom css -->
   <link href="css/main.css" rel="stylesheet" />
 
-  <title>team4solution</title>
+
+
+  <title>Team4Solution</title>
 </head>
 
 <body>
@@ -38,7 +42,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse desktop-menu" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Home </a>
@@ -52,10 +56,37 @@
                   Services
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <ul class="list-style-check">
+                        <li><i class="zmdi zmdi-check"></i> <a href="">UX/UI Design</a> </li>
+                        <li> <i class="zmdi zmdi-check"></i> <a href="">Isometric Design</a></li>
+                        <li> <i class="zmdi zmdi-check"></i><a href="">Wordpress Development</a> </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3">
+                      <ul class="list-style-check">
+                        <li><i class="zmdi zmdi-check"></i> <a href="">UX/UI Design</a> </li>
+                        <li> <i class="zmdi zmdi-check"></i> <a href="">Isometric Design</a></li>
+                        <li> <i class="zmdi zmdi-check"></i><a href="">Wordpress Development</a> </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3">
+                      <ul class="list-style-check">
+                        <li><i class="zmdi zmdi-check"></i> <a href="">UX/UI Design</a> </li>
+                        <li> <i class="zmdi zmdi-check"></i> <a href="">Isometric Design</a></li>
+                        <li> <i class="zmdi zmdi-check"></i><a href="">Wordpress Development</a> </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3">
+                      <ul class="list-style-check">
+                        <li><i class="zmdi zmdi-check"></i> <a href="">UX/UI Design</a> </li>
+                        <li> <i class="zmdi zmdi-check"></i> <a href="">Isometric Design</a></li>
+                        <li> <i class="zmdi zmdi-check"></i><a href="">Wordpress Development</a> </li>
+                      </ul>
+                    </div>
+
+                  </div>
                 </div>
               </li>
               <li class="nav-item">
@@ -76,31 +107,307 @@
       </nav>
     </header>
     <main class="tfs-main">
-      <h1>main body goes here Arjun</h1>
+
+      <div class="hero-section">
+        <div id="slider-animation" class="carousel slide" data-ride="carousel">
+
+
+
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/hero-banner.jpg" alt="Los Angeles">
+              <div class="text-box">
+                <h1 class="wow slideInRight" data-wow-duration="2s">Your Next Digital<br>
+                  Product Start Here</h1>
+                <p class="wow slideInLeft" data-wow-duration="1s">we aim high at being focused on building relationships
+                  with our clients and commmunity. </p>
+                <div class="wow slideInUp" data-wow-duration="1.5s"><a class="btn btn-border" href="">Get In Touch</a><a
+                    class="btn btn-light" href="">Our Works</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <img src="images/hero-banner.jpg" alt="Los Angeles">
+              <div class="text-box">
+                <h1 class="wow slideInRight" data-wow-duration="2s">Your Digital<br>
+                  Product Start Here</h1>
+                <p class="wow slideInLeft" data-wow-duration="1s">we aim high at being focused on building relationships
+                  with our clients and commmunity. </p>
+                <div class="wow slideInUp" data-wow-duration="1.5s"><a class="btn btn-border" href="">Get In Touch</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#slider-animation" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#slider-animation" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+
+        </div>
+
+      </div>
 
       <!-- Services section -->
       <div class="services--section ">
         <div class="container-xl">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                aria-selected="true">Home</a>
+          <ul class="nav nav-tabs row" id="myTab" role="tablist">
+            <li class="nav-item col-4 tab1" role="presentation">
+              <a class="nav-link d-flex active" id="ser-tab" data-toggle="tab" href="#services" role="tab"
+                aria-controls="home" aria-selected="true"><span class="icon-block align-self-center"><img
+                    src="images/service-icon.svg" />
+                </span><span class="detail-block align-self-center"><strong>Services</strong><br />Loreum Ipsum dolar
+                  sit emit</span> </a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                aria-selected="false">Profile</a>
+            <li class="col-4 nav-item tab2" role="presentation">
+              <a class="nav-link d-flex" id="ind-tab" data-toggle="tab" href="#ind" role="tab" aria-controls="profile"
+                aria-selected="false"><span class="icon-block align-self-center"><img src="images/ind-icon.svg" />
+                </span><span class="detail-block align-self-center"><strong>Industries</strong><br />Loreum Ipsum dolar
+                  sit emit</span></a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab"
-                aria-controls="messages" aria-selected="false">Messages</a>
+            <li class="col-4 nav-item tab3" role="presentation">
+              <a class="nav-link d-flex" id="tech-tab" data-toggle="tab" href="#tech" role="tab"
+                aria-controls="messages" aria-selected="false"><span class="icon-block align-self-center"><img
+                    src="images/tech-icon.svg" />
+                </span><span class="detail-block align-self-center"><strong>Technologies</strong><br />Loreum Ipsum
+                  dolar
+                  sit emit</span></a>
             </li>
 
           </ul>
 
           <div class="tab-content">
-            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">1</div>
-            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">2</div>
-            <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">3</div>
+            <div class="tab-pane active" id="services" role="tabpanel" aria-labelledby="home-tab">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>App Development</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>Content Marketing</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>Web Development</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>SEO Optimization</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>Social Media Marketing</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>UI/UX Design</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="tab-pane" id="ind" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>App Development</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>Content Marketing</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>Web Development</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>SEO Optimization</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>Social Media Marketing</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>UI/UX Design</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="tab-pane" id="tech" role="tabpanel" aria-labelledby="messages-tab">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>App Development</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>Content Marketing</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>Web Development</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>SEO Optimization</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>Social Media Marketing</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-4">
+                  <div class="services-card">
+
+                    <div class="services-card--inner">
+                      <div class="card-icon"><img src="images/ser-icon.svg" /></div>
+                      <h3>UI/UX Design</h3>
+                      <p>Create and manage top-performing social campaigns and start.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
           </div>
 
 
@@ -134,9 +441,9 @@
                           <li> <i class="zmdi zmdi-check"></i>Wordpress Development </li>
                         </ul>
 
-                        <button class="btn btn-primary">
+                        <a href="" class="btn btn-primary">
                           View Details
-                        </button>
+                        </a>
                       </div>
                     </div>
                     <div class="col-md-8">
@@ -162,9 +469,9 @@
                           <li> <i class="zmdi zmdi-check"></i>Wordpress Development </li>
                         </ul>
 
-                        <button class="btn btn-primary">
+                        <a href="" class="btn btn-primary">
                           View Details
-                        </button>
+                        </a>
                       </div>
                     </div>
                     <div class="col-md-8">
@@ -190,9 +497,9 @@
                           <li> <i class="zmdi zmdi-check"></i>Wordpress Development </li>
                         </ul>
 
-                        <button class="btn btn-primary">
+                        <a href="" class="btn btn-primary">
                           View Details
-                        </button>
+                        </a>
                       </div>
                     </div>
                     <div class="col-md-8">
@@ -972,8 +1279,13 @@
   </script>
   <!-- swiper js -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- wow js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+
   <!-- main js  -->
   <script src="js/main.js"></script>
+
 </body>
 
 </html>
