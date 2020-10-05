@@ -3466,6 +3466,8 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 .hero-section .carousel-control-next-icon, .hero-section .carousel-control-prev-icon { width: 3.125rem; height: 3.125rem; }
 
+.hero-section .carousel-item img { width: 100%; }
+
 .hero-section .carousel-control-prev-icon { background: url(../images/slider-left-arrow.svg); }
 
 .hero-section .carousel-control-next-icon { background: url(../images/slider-right-arrow2.svg); }
@@ -3641,6 +3643,8 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 .tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link { color: #343434; opacity: 100; padding: 0.313rem; border-bottom: 4px solid transparent; }
 
 .tfs-header .navbar-light .desktop-menu .navbar-nav .active > .nav-link, .tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link.active, .tfs-header .navbar-light .desktop-menu .navbar-nav .active > .nav-link:hover, .tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link.active:hover, .tfs-header .navbar-light .desktop-menu .navbar-nav .nav-link:hover { border-bottom: 4px solid #F6821F; }
+
+.tfs-header .navbar-light .desktop-menu .contact-us .nav-link { color: #FFFFFF; padding: 0.313rem 1.25rem; }
 
 .tfs-footer { background-color: #0570D8; color: white; margin-top: auto; padding-top: 6.25rem; background-image: url(../images/footer-bg-1.svg), url(../images/footer-bg-2.svg); background-position: left top, right bottom; background-repeat: no-repeat; font-size: 1rem; }
 
