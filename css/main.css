@@ -3773,7 +3773,9 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 .tfs-footer--list li a { color: #9EE8FF; font-weight: 500; }
 
-.tfs-footer--copyright { padding-top: 1.875rem; padding-bottom: 1.875rem; color: rgba(255, 255, 255, 0.6); font-weight: 500; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.2); }
+.tfs-footer--copyright { padding-top: 1.875rem; padding-bottom: 1.875rem; color: rgba(255, 255, 255, 0.6); font-weight: 500; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.2); position: relative; }
+
+.tfs-footer--copyright .scroll_To_Top { position: absolute; top: -26px; right: 50px; }
 
 /* DO not make any changes directly compiled file */
 

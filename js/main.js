@@ -25,11 +25,11 @@ wow = new WOW({
 
 });
 wow.init();
-document.getElementById('moar').onclick = function () {
-	var section = document.createElement('section');
-	section.className = 'section--purple wow fadeInDown';
-	this.parentNode.insertBefore(section, this);
-};
+//document.getElementById('moar').onclick = function () {
+//var section = document.createElement('section');
+//section.className = 'section--purple wow fadeInDown';
+//this.parentNode.insertBefore(section, this);
+//};
 
 // repeat Animation
 
@@ -37,5 +37,14 @@ document.getElementById('moar').onclick = function () {
 
 // Hero slider 
 $('.carousel').carousel({
-	interval: 1000
+	interval: 10000
 })
+//scroll top
+function scrollToTop() {
+	var position =
+		document.body.scrollTop || document.documentElement.scrollTop;
+	if (position) {
+		window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+		scrollAnimation = setTimeout("scrollToTop()", 30);
+	} else clearTimeout(scrollAnimation);
+}
