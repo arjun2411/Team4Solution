@@ -18,9 +18,11 @@ var swiper = new Swiper('.swiper-container', {
 wow = new WOW({
 	animateClass: 'animated',
 	offset: 100,
+	mobile: false,
 	callback: function (box) {
 		console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
 	}
+
 });
 wow.init();
 document.getElementById('moar').onclick = function () {
@@ -28,6 +30,9 @@ document.getElementById('moar').onclick = function () {
 	section.className = 'section--purple wow fadeInDown';
 	this.parentNode.insertBefore(section, this);
 };
+
+// repeat Animation
+
 
 
 // Hero slider 

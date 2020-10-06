@@ -8,11 +8,21 @@
     background-repeat: no-repeat;
     font-size: $txt-16;
 
+    @media screen and (max-width: 767px) {
+        padding-top: 30px;
+    }
+
     &--primary {
         padding-bottom: $txt-50+$txt-50;
+
+        @media screen and (max-width: 767px) {
+            padding-bottom: 30px;
+        }
     }
 
     &--contact-us {
+
+
         a {
             color: $white;
         }
@@ -54,6 +64,10 @@
     }
 
     &--social-icons {
+        @media screen and (max-width: 767px) {
+            padding-bottom: 30px;
+        }
+
         .nav-link {
             padding: $txt-3;
 

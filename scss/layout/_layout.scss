@@ -69,6 +69,10 @@
         color: $white;
         font-size: $txt-50+$txt-10;
 
+        @media screen and (max-width: 767px) {
+            font-size: $txt-30;
+        }
+
 
     }
 
@@ -91,15 +95,28 @@
         min-height: calc(80vh - 100px);
         background-repeat: no-repeat;
         background-size: cover;
-        animation: shrink 15s infinite alternate;
+
         background-position: center center;
+
+        @media screen and (min-width: 1200px) {
+            animation: shrink 15s infinite alternate;
+        }
+
+        @media screen and (max-width: 990px) {
+            min-height: 500px;
+        }
+
+        @media screen and (max-width: 767px) {
+            min-height: 400px;
+        }
     }
 
     .carousel-control-next-icon,
     .carousel-control-prev-icon {
 
-        width: $txt-50;
-        height: $txt-50;
+        width: 50px;
+        height: 50px;
+        background-size: 100% 100%;
 
     }
 
@@ -180,6 +197,10 @@
             img {
                 border-radius: 20px;
                 box-shadow: 0px 18px 44px 10px rgba(0, 0, 0, 0.15);
+
+                @media screen and (max-width: 767px) {
+                    margin-top: 20px;
+                }
             }
         }
     }
@@ -199,6 +220,14 @@
 
     .nav-tabs {
         border: none;
+
+        .nav-item {
+            @media screen and (max-width: 767px) {
+                flex-wrap: wrap;
+                padding: $txt-15 $txt-5;
+                text-align: center;
+            }
+        }
     }
 
     .nav-link {
@@ -209,14 +238,45 @@
         padding: $txt-18 $txt-24;
         margin-bottom: $txt-5;
 
+        @media screen and (max-width: 767px) {
+            flex-wrap: wrap;
+            padding: $txt-15 $txt-3;
+            text-align: center;
+
+
+            .icon-block {
+
+                display: block;
+                text-align: center;
+                width: 100%;
+            }
+        }
 
         .detail-block {
             color: $grey-lt;
             padding-left: $txt-24;
 
+
+            @media screen and (max-width: 767px) {
+                padding-left: 0;
+                display: block;
+                text-align: center;
+                width: 100%;
+            }
+
             strong {
                 color: $dark-grey;
                 font-size: $txt-20;
+
+                @media screen and (max-width: 767px) {
+                    font-size: $txt-16;
+                }
+            }
+
+            .mobile-hide {
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
             }
         }
     }
@@ -335,6 +395,15 @@
                 margin-left: $txt-15;
                 margin-right: $txt-15;
 
+                @media screen and (max-width: 990px) {
+                    font-size: $txt-40;
+                }
+
+                @media screen and (max-width: 767px) {
+                    font-size: $txt-30;
+                    width: 33.33%;
+                }
+
                 span {
                     font-size: $txt-16;
                     font-weight: 500;
@@ -349,6 +418,12 @@
             &--list {
                 margin-left: $txt-5;
                 margin-right: $txt-5;
+
+                img {
+                    @media screen and (max-width: 767px) {
+                        width: 80px;
+                    }
+                }
             }
         }
 
@@ -362,6 +437,10 @@
         background-repeat: no-repeat;
         background-position: right top;
         box-shadow: -1px 20px 30px 10px rgba(0, 0, 0, 0.15);
+
+        @media screen and (max-width: 767px) {
+            margin-top: 20px;
+        }
 
         h2 {
             color: $blue;
@@ -389,6 +468,10 @@
     padding: $txt-50 0 $txt-50+$txt-50 0;
     background-size: cover;
 
+    @media screen and (max-width: 767px) {
+        padding-bottom: 20px;
+    }
+
 
 
     &--logos {
@@ -399,6 +482,14 @@
         img {
             height: $txt-50+$txt-20;
             margin: $txt-20;
+
+            @media screen and (max-width: 990px) {
+                margin: $txt-10;
+            }
+
+            @media screen and (max-width: 767px) {
+                height: 40px;
+            }
         }
     }
 
@@ -415,20 +506,40 @@
                 padding-right: $txt-50+$txt-20;
                 font-size: $txt-20+$txt-2;
                 font-weight: $font-medium;
+
+                @media screen and (max-width: 767px) {
+                    padding: 20px 20px 5px;
+                }
             }
 
             img {
                 width: 100%;
+
+                @media screen and (max-width: 767px) {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    margin: 20px auto;
+                    display: flex;
+                }
             }
 
             .name {
                 font-size: $txt-18;
                 font-weight: $font-medium;
 
+                @media screen and (max-width: 767px) {
+                    padding: 20px 20px 5px;
+                }
+
                 em {
                     font-style: $font-style-normal;
                     font-size: $txt-12;
                     display: block;
+
+                    @media screen and (max-width: 767px) {
+                        padding: 0px 20px 5px;
+                    }
                 }
             }
 
@@ -439,6 +550,9 @@
         .carousel-control-prev {
             opacity: 100;
 
+            @media screen and (max-width: 767px) {
+                height: 160px;
+            }
         }
 
         .carousel-control-next {
@@ -495,6 +609,10 @@
         margin: $txt-20 $txt-50;
         border-radius: $txt-5;
 
+        @media screen and (max-width: 990px) {
+            margin: $txt-10 $txt-20;
+        }
+
         img {
             width: $txt-50+$txt-40;
         }
@@ -537,6 +655,10 @@
         &:nth-child(2) {
             left: -$txt-50;
             position: relative;
+
+            @media screen and (max-width: 767px) {
+                left: 0;
+            }
         }
 
         h2 {
@@ -561,6 +683,10 @@
 
         &--inner {
             padding: $txt-5 $txt-20+$txt-5;
+
+            @media screen and (max-width: 990px) {
+                padding: $txt-5 $txt-5;
+            }
         }
     }
 }
@@ -572,6 +698,10 @@
     background: #FFFFFF;
     box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.1);
     border-radius: $txt-15;
+
+    @media screen and (max-width: 767px) {
+        margin: 20px 0px;
+    }
 
     &--inner {
         padding: $txt-15 $txt-20+$txt-5;
