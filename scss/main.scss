@@ -1,5 +1,6 @@
 // base css
 @import 'base/variables',
+'base/icons-fonts',
 'base/fonts',
 'base/helpers',
 'base/base-selectors';
@@ -20,6 +21,7 @@
 
 
 // pages
-@import 'pages/home';
+@import 'pages/home',
+'pages/services';
 
-/* DO not make any changes directly compiled file */
+/* Do not make any changes directly compiled file */
