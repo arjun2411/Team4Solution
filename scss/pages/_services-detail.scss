@@ -1,0 +1,60 @@
+/**/
+.services--section {
+    &.development-services {
+        .container-xl {
+            margin-top: 0;
+            padding-top: $txt-50;
+            padding-bottom: $txt-50;
+        }
+    }
+}
+
+.development-services {
+    .full-box {
+        overflow: hidden;
+        margin-top: $txt-40;
+
+        .development-card {
+            &-row {
+                &:nth-child(even) {
+                    flex-direction: row-reverse;
+
+                    .development-card--left {
+                        padding-right: 15px;
+                        padding-left: 0;
+                    }
+
+                }
+
+
+            }
+
+            &--left {
+                padding-right: 0;
+
+                img {
+                    width: 100%
+                }
+            }
+
+            &--right {
+                padding: $txt-30;
+
+                h2 {
+                    font-weight: $font-bold;
+                    font-size: $txt-20;
+                    color: $blue;
+                    margin: 0px 0 $txt-20;
+                }
+            }
+        }
+    }
+}
+
+.full-box {
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}

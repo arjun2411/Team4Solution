@@ -3993,6 +3993,25 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 .accordion-section .card .card-header .btn.collapsed:after { position: absolute; content: "\e905"; }
 
+/**/
+.services--section.development-services .container-xl { margin-top: 0; padding-top: 3.125rem; padding-bottom: 3.125rem; }
+
+.development-services .full-box { overflow: hidden; margin-top: 2.5rem; }
+
+.development-services .full-box .development-card-row:nth-child(even) { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+
+.development-services .full-box .development-card-row:nth-child(even) .development-card--left { padding-right: 15px; padding-left: 0; }
+
+.development-services .full-box .development-card--left { padding-right: 0; }
+
+.development-services .full-box .development-card--left img { width: 100%; }
+
+.development-services .full-box .development-card--right { padding: 1.875rem; }
+
+.development-services .full-box .development-card--right h2 { font-weight: 700; font-size: 1.25rem; color: #0570D8; margin: 0px 0 1.25rem; }
+
+.full-box { background: #FFFFFF; border: 1px solid #E6E6E6; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.1); box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.1); border-radius: 15px; }
+
 /* Do not make any changes directly compiled file */
 
 /*# sourceMappingURL=main.css.map */
