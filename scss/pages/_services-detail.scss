@@ -58,3 +58,334 @@
     box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 }
+
+/*tech-tab*/
+.latesttech-section {
+    background: url(../images/tech-tab-bg.jpg) left bottom no-repeat;
+    background-size: 100% 100%;
+
+
+    &--inner {
+        background: url(../images/tech-tab-shape.svg) right bottom no-repeat;
+        background-size: 90% auto;
+        padding: $txt-50 0;
+    }
+
+    .tab-section {
+        margin-top: $txt-40;
+
+        .tab-content {
+            min-height: 180px;
+        }
+    }
+}
+
+.tab-section {
+
+    &.six-tabs {
+        .nav.nav-tabs {
+            .nav-item {
+                padding: 0 4px;
+
+                @media screen and (min-width: 768px) {
+                    width: 16.6%;
+                }
+
+                .nav-link {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 5px;
+
+                }
+            }
+        }
+
+    }
+}
+
+/*capabilties-section*/
+.capabilties-section {
+    padding: $txt-50 0;
+
+    background: #FAF9FC url(../images/latest-project-top.svg) top right no-repeat;
+
+    &--left {
+        padding-right: 3px;
+
+        @media screen and (max-width: 767px) {
+            padding-right: 15px;
+        }
+
+    }
+
+    &--right {
+        padding-left: 3px;
+
+        @media screen and (max-width: 767px) {
+            padding-left: 15px;
+        }
+    }
+
+    &--boxes {
+        padding-top: $txt-50;
+    }
+
+    &--box {
+
+        border-radius: 15px;
+        overflow: hidden;
+
+        @media screen and (max-width: 767px) {
+            margin: 10px 0;
+        }
+
+        h2 {
+            padding: $txt-20 $txt-24;
+            font-size: $txt-20;
+            font-weight: $font-bold;
+            margin: 0;
+        }
+
+        p {
+            font-size: $txt-16;
+            margin-bottom: 5px;
+
+        }
+
+
+
+        li {
+            padding: $txt-16 $txt-24;
+            margin: 2px 0;
+            min-height: 145px;
+
+            @media screen and (width: 768px) {
+                min-height: 170px;
+            }
+
+            .li-heading {
+                font-size: $txt-20;
+                font-weight: $font-bold;
+                color: black;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &.blue-box {
+            background: #E8F3FF;
+            box-shadow: 3px 0px 3px #E6E6E6;
+
+
+            h2 {
+                color: $blue;
+            }
+
+            li {
+                background: #F0F6FC;
+
+            }
+        }
+
+        &.orange-box {
+            background: #FFF4EB;
+            box-shadow: -3px 0px 3px #E6E6E6;
+
+
+            h2 {
+                color: $orange;
+            }
+
+            li {
+                background: #FCF6F2;
+
+            }
+        }
+    }
+
+
+
+}
+
+/*process-section*/
+.process-section {
+    background: url(../images/process-shape.svg) left bottom no-repeat;
+    background-size: 100% auto;
+    padding: $txt-50 0 $txt-50+$txt-50+$txt-50+$txt-40;
+
+    @media screen and (max-width: 990px) {
+        padding: $txt-50 0 $txt-50+$txt-50;
+    }
+
+
+    &--row {
+        margin-top: $txt-50;
+
+        @media screen and (max-width: 990px) {
+            margin-top: $txt-30;
+        }
+    }
+
+    &--col {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    &--box {
+        position: relative;
+        border: 2px dashed $blue;
+        box-sizing: border-box;
+        border-radius: 15px;
+        padding: 18px 15px;
+        height: 100%;
+        margin-right: 15px;
+
+        @media screen and (max-width: 990px) {
+            margin-right: 0px;
+        }
+
+        &:nth-child(3) {
+
+            &:after {
+                display: none;
+            }
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            background: url(../images/process-arrow.svg) left top no-repeat;
+            background-size: 100% 100%;
+            height: 31px;
+            width: 31px;
+            right: -31px;
+            transform: translateY(-51%);
+
+            top: 51%;
+
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
+
+        }
+    }
+
+    &--boxinner {
+        background: #FFFFFF url(../images/tool-box-shape.svg) right top no-repeat;
+
+
+        border: 1px solid #E6E6E6;
+        box-sizing: border-box;
+        box-shadow: -4px 5px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        padding: $txt-24;
+        height: 100%;
+
+        h3 {
+            font-size: $txt-20;
+            font-weight: $font-bold;
+            color: $blue;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        .num-icon {
+            margin-bottom: 20px;
+
+
+            span {
+                background: $blue;
+                color: white;
+                border-radius: 50%;
+                height: 45px;
+                width: 45px;
+                font-size: $txt-20;
+                font-weight: $font-bold;
+                display: flex;
+                box-shadow: 0px 0px 11px #0570D8;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+    }
+}
+
+.process-section--col {
+
+
+    &:nth-child(3) {
+        .process-section--box {
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+/*efficiency*/
+.efficiency-section {
+    background: url(../images/efficiency-bg.jpg) top left no-repeat;
+    background-size: cover;
+    color: $white;
+
+    &--inner {
+        background: url(../images/efficiency-shape.svg) bottom left no-repeat;
+        background-size: 100% auto;
+        padding: $txt-50 0 $txt-50+$txt-50+$txt-50;
+
+        @media screen and (max-width: 767px) {
+            padding: $txt-50 0 $txt-50;
+        }
+
+        .hedding-and-detail {
+            padding-bottom: $txt-50;
+
+            @media screen and (max-width: 767px) {
+                padding-bottom: $txt-20;
+            }
+        }
+    }
+
+    h2 {
+        color: $white;
+    }
+
+}
+
+.milestone-counter {
+    text-align: center;
+    color: white;
+
+    @media screen and (max-width: 767px) {
+        padding: $txt-20 0;
+    }
+
+    .count-outer {
+        color: #F8AE6E;
+        font-weight: $font-bold;
+        font-size: $txt-40+$txt-10;
+        line-height: $txt-40;
+
+        .stat-count {
+            color: $white;
+        }
+    }
+
+    .small-text {
+        color: #F8AE6E;
+        font-size: 11px;
+        margin-bottom: 5px;
+
+    }
+
+    .milestone-details {
+        font-size: 14px;
+    }
+}

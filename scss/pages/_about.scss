@@ -1,0 +1,19 @@
+/**/
+.services--section {
+    background-size: 23%;
+
+    &.about-section {
+        .container-xl {
+            margin-top: 0;
+            padding-top: $txt-50;
+            padding-bottom: $txt-50;
+        }
+    }
+
+    .full-box {
+        overflow: hidden;
+        margin-top: $txt-40;
+        padding: $txt-50+$txt-20 $txt-30;
+        text-align: center;
+    }
+}
