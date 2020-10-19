@@ -3993,7 +3993,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 .accordion-section .card .card-header { padding: 0; -webkit-box-shadow: none; box-shadow: none; border: none; background: none; border-radius: 5px; }
 
-.accordion-section .card .card-header .btn { width: 100%; padding: 0.938rem 1.875rem; text-align: left; background: #0570D8; color: white; text-decoration: none !important; font-weight: 500; font-size: 1.125rem; position: relative; }
+.accordion-section .card .card-header .btn { width: 100%; padding: 0.938rem 3.125rem 0.938rem 1.25rem; text-align: left; background: #0570D8; color: white; text-decoration: none !important; font-weight: 500; font-size: 1.125rem; position: relative; }
 
 .accordion-section .card .card-header .btn:after { position: absolute; content: "\e906"; font-size: 1.5rem; font-family: 'icomoon' !important; speak: never; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; right: 1.5rem; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); top: 50%; }
 
@@ -4010,7 +4010,70 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 .services--section.about-section .container-xl { margin-top: 0; padding-top: 3.125rem; padding-bottom: 3.125rem; }
 
-.services--section .full-box { overflow: hidden; margin-top: 2.5rem; padding: 4.375rem 1.875rem; text-align: center; }
+.services--section.about-section .full-box { overflow: hidden; margin-top: 2.5rem; padding: 4.375rem 1.875rem; text-align: center; }
+
+@media screen and (max-width: 767px) { .services--section.about-section .full-box { padding: 1.25rem 1.875rem; } }
+
+.aboutwhychoose-section { background: -webkit-linear-gradient(279.26deg, #F9F9FF 6.51%, #FFFFFF 32.66%); background: -o-linear-gradient(279.26deg, #F9F9FF 6.51%, #FFFFFF 32.66%); background: linear-gradient(170.74deg, #F9F9FF 6.51%, #FFFFFF 32.66%); }
+
+.aboutwhychoose-section--inner { background: url(../images/latest-project-top.svg) no-repeat right top; padding: 3.125rem 0 0; }
+
+.aboutwhychoose-section .hedding-and-detail .heading { margin-bottom: 1.875rem; }
+
+.aboutwhychoose-section .hedding-and-detail p { margin-bottom: 1.875rem; }
+
+@media screen and (max-width: 767px) { .aboutwhychoose-section ul { margin-top: 1.875rem; } }
+
+.aboutwhychoose-section ul li { margin: 5px 0; }
+
+.excellence-section { padding-top: 3.125rem; padding-bottom: 3.125rem; background-image: url(../images/excellence-bg.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover; position: relative; color: white; z-index: 1; }
+
+.excellence-section .right-icon-card li { text-align: right; }
+
+@media screen and (max-width: 990px) { .excellence-section .right-icon-card li { text-align: left; } }
+
+.excellence-section .right-icon-card h3 { text-align: right; }
+
+@media screen and (max-width: 990px) { .excellence-section .right-icon-card h3 { text-align: left; } }
+
+.excellence-section .heading { color: white; }
+
+.excellence-section::after { content: ""; background-color: rgba(5, 112, 216, 0.8); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+
+.excellence-section--card { background-color: white; border-radius: 0.938rem; color: #606060; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0.938rem; font-size: 0.875rem; position: relative; overflow: hidden; position: relative; margin: 1.25rem 0; max-width: 400px; margin-left: auto; margin-right: auto; }
+
+@media screen and (max-width: 767px) { .excellence-section--card { max-width: 310px; margin-bottom: 0; } }
+
+.excellence-section--card-content { width: calc(100% - 110px); }
+
+.excellence-section--card-content h3 { font-size: 1.25rem; color: black; margin-bottom: 5px; }
+
+.excellence-section--card-content ul { margin-bottom: 0; }
+
+.excellence-section--card-content.with-card-orangebg:after { background-color: #FFDCBE; }
+
+.excellence-section--card-content:after { content: ""; background-color: #B1D7FF; width: 230px; height: 363px; position: absolute; border-radius: 50%; right: -130px; top: -113px; z-index: 1; }
+
+.excellence-section--card-icon { width: 6.25rem; -ms-flex-negative: 0; flex-shrink: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; position: relative; z-index: 2; right: -30px; }
+
+.excellence-section--card-hexagon { width: 100%; padding: 0.625rem 3.125rem; background: rgba(255, 255, 255, 0.15); position: relative; margin-top: 90px; margin-bottom: 100px; }
+
+@media screen and (max-width: 1024px) { .excellence-section--card-hexagon { padding: 10px; max-width: 310px; margin-left: auto; margin-right: auto; } }
+
+.excellence-section--card-hexagon::before { content: ""; width: 100%; background-image: url(../images/hexa-triangle.svg); background-repeat: no-repeat; background-size: 100%; background-position: center bottom; position: absolute; height: 90px; opacity: .15; top: -89px; left: 0; overflow: hidden; }
+
+.excellence-section--card-hexagon::after { content: ""; width: 100%; background-image: url(../images/hexa-triangle.svg); background-repeat: no-repeat; background-size: 100%; position: absolute; height: 90px; opacity: .15; bottom: -89px; left: 0; -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); overflow: hidden; background-position: center bottom; }
+
+@media screen and (min-width: 990px) { .left-icon-card .excellence-section--card { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; } }
+
+@media screen and (min-width: 990px) { .left-icon-card .excellence-section--card-icon { right: 30px; } }
+
+@media screen and (min-width: 990px) { .left-icon-card .excellence-section--card-content .left-icon-card li { text-align: left; }
+  .left-icon-card .excellence-section--card-content .left-icon-card h3 { text-align: left; } }
+
+@media screen and (min-width: 990px) { .left-icon-card .excellence-section--card-content:after { right: auto; left: -130px; } }
+
+@media screen and (max-width: 767px) { .excellence-hexagon { -webkit-box-ordinal-group: 0; -ms-flex-order: -1; order: -1; } }
 
 /**/
 .services--section.development-services .container-xl { margin-top: 0; padding-top: 3.125rem; padding-bottom: 3.125rem; }

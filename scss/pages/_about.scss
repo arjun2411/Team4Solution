@@ -8,12 +8,261 @@
             padding-top: $txt-50;
             padding-bottom: $txt-50;
         }
+
+        .full-box {
+            overflow: hidden;
+            margin-top: $txt-40;
+            padding: $txt-50+$txt-20 $txt-30;
+            text-align: center;
+
+            @media screen and (max-width: 767px) {
+
+                padding: $txt-20 $txt-30;
+
+            }
+        }
+    }
+}
+
+.aboutwhychoose-section {
+    background: linear-gradient(170.74deg, #F9F9FF 6.51%, #FFFFFF 32.66%);
+
+    &--inner {
+        background: url(../images/latest-project-top.svg) no-repeat right top;
+        padding: $txt-50 0 0;
     }
 
-    .full-box {
+    .hedding-and-detail {
+        .heading {
+            margin-bottom: $txt-30;
+        }
+
+        p {
+            margin-bottom: $txt-30;
+        }
+    }
+
+    ul {
+        @media screen and (max-width: 767px) {
+
+            margin-top: $txt-30;
+
+        }
+
+        li {
+            margin: 5px 0;
+        }
+    }
+}
+
+.excellence-section {
+    padding-top: $txt-50;
+    padding-bottom: $txt-50;
+    background-image: url(../images/excellence-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    z-index: 1;
+
+    .right-icon-card {
+        li {
+            text-align: right;
+
+            @media screen and (max-width: 990px) {
+                text-align: left;
+            }
+        }
+
+        h3 {
+            text-align: right;
+
+            @media screen and (max-width: 990px) {
+                text-align: left;
+            }
+        }
+
+    }
+
+
+
+    .heading {
+        color: white;
+    }
+
+    &::after {
+        content: "";
+        background-color: rgba($blue, .8);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    &--card {
+        background-color: white;
+        border-radius: $txt-15;
+        color: $grey-lt;
+        display: flex;
+        padding: $txt-15;
+        font-size: $txt-14;
+        position: relative;
         overflow: hidden;
-        margin-top: $txt-40;
-        padding: $txt-50+$txt-20 $txt-30;
-        text-align: center;
+        position: relative;
+        margin: $txt-20 0;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (max-width: 767px) {
+            max-width: 310px;
+            margin-bottom: 0;
+
+        }
+
+
+        &-content {
+            width: calc(100% - 110px);
+
+            h3 {
+                font-size: $txt-20;
+                color: black;
+                margin-bottom: 5px;
+            }
+
+            ul {
+                margin-bottom: 0;
+            }
+
+            &.with-card-orangebg {
+                &:after {
+                    background-color: #FFDCBE;
+                }
+            }
+
+
+            &:after {
+                content: "";
+                background-color: #B1D7FF;
+                width: 230px;
+                height: 363px;
+                position: absolute;
+                border-radius: 50%;
+                right: -130px;
+                top: -113px;
+                z-index: 1;
+            }
+        }
+
+        &-icon {
+            width: $txt-50*2;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            right: -30px;
+        }
+
+        &-orangebg {}
+
+        &-hexagon {
+            width: 100%;
+            padding: $txt-10 $txt-50;
+            background: rgba(white, .15);
+            position: relative;
+            margin-top: 90px;
+            margin-bottom: 100px;
+
+            @media screen and (max-width: 1024px) {
+                padding: 10px;
+                max-width: 310px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        &-hexagon::before {
+            content: "";
+            width: 100%;
+            background-image: url(../images/hexa-triangle.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center bottom;
+            position: absolute;
+            height: 90px;
+            opacity: .15;
+            top: -89px;
+            left: 0;
+            overflow: hidden;
+        }
+
+        &-hexagon::after {
+            content: "";
+            width: 100%;
+            background-image: url(../images/hexa-triangle.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: absolute;
+            height: 90px;
+            opacity: .15;
+            bottom: -89px;
+            left: 0;
+            transform: rotate(180deg);
+            overflow: hidden;
+            background-position: center bottom;
+        }
+    }
+}
+
+.left-icon-card {
+    .excellence-section {
+        &--card {
+            @media screen and (min-width: 990px) {
+                flex-direction: row-reverse;
+                justify-content: flex-start;
+            }
+
+            &-icon {
+                @media screen and (min-width: 990px) {
+                    right: 30px;
+                }
+            }
+
+            &-content {
+                @media screen and (min-width: 990px) {
+                    .left-icon-card {
+                        li {
+                            text-align: left;
+                        }
+
+                        h3 {
+                            text-align: left;
+                        }
+                    }
+                }
+
+
+
+                &:after {
+                    @media screen and (min-width: 990px) {
+                        right: auto;
+                        left: -130px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+.excellence-hexagon {
+    @media screen and (max-width: 767px) {
+        order: -1;
     }
 }
