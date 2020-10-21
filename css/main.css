@@ -3722,6 +3722,8 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 .tellus-section--milestones-section .awards-logo--list { margin-left: 0.313rem; margin-right: 0.313rem; }
 
+.tellus-section--milestones-section .awards-logo--list:hover { -webkit-transition: -webkit-transform 1s; transition: -webkit-transform 1s; -o-transition: transform 1s; transition: transform 1s; transition: transform 1s, -webkit-transform 1s; -webkit-transform: scale(1.3); -ms-transform: scale(1.3); transform: scale(1.3); }
+
 @media screen and (max-width: 767px) { .tellus-section--milestones-section .awards-logo--list img { width: 80px; } }
 
 .tellus-section--form { background-color: white; padding: 1.875rem; border-radius: 1.25rem; background-image: url(../images/frm-shape.svg); background-repeat: no-repeat; background-position: right top; -webkit-box-shadow: -1px 20px 30px 10px rgba(0, 0, 0, 0.15); box-shadow: -1px 20px 30px 10px rgba(0, 0, 0, 0.15); }
@@ -3865,6 +3867,10 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 @media screen and (max-width: 767px) { .lifecycle--section-left::before { background-size: 290px; background-position: center top; left: auto; } }
 
 .lifecycle--list { padding-top: 3.125rem; }
+
+.lifecycle--list li { padding: 10px 20px; border-radius: 10px; }
+
+.lifecycle--list li:hover { -webkit-box-shadow: 0px 14px 30px 10px rgba(0, 0, 0, 0.1); box-shadow: 0px 14px 30px 10px rgba(0, 0, 0, 0.1); }
 
 .lifecycle--list-header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 0.625rem; }
 
@@ -4076,6 +4082,47 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 @media screen and (max-width: 767px) { .excellence-hexagon { -webkit-box-ordinal-group: 0; -ms-flex-order: -1; order: -1; } }
 
 /**/
+.services--section { background-size: 23%; background-position: left bottom, 112.6% top; }
+
+.services--section.contact-section .container-xl { margin-top: 0; padding-top: 3.125rem; padding-bottom: 3.125rem; }
+
+@media screen and (max-width: 767px) { .services--section.contact-section .container-xl { padding-top: 0.625rem; padding-bottom: 3.125rem; } }
+
+.services--section.contact-section .full-box { overflow: hidden; margin-top: 2.5rem; padding: 4.375rem 1.875rem; text-align: center; }
+
+@media screen and (max-width: 767px) { .services--section.contact-section .full-box { padding: 1.25rem 1.875rem; } }
+
+.contact-section .tellus-section--form h2 { margin: 0 0 1.875rem; }
+
+.contact-section .tellus-section--form .form-group { margin-bottom: 1.875rem; }
+
+.contact-section .tellus-section--form .form-group textarea.form-control { height: 100px; }
+
+.contact-section .tellus-section--form .form-group .btn-primary { max-width: 400px; margin-left: auto; margin-right: auto; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.address-section { background: -webkit-gradient(linear, right top, left top, color-stop(50%, #0570D8), to(#3599FB)); background: -webkit-linear-gradient(right, #0570D8 50%, #3599FB 100%); background: -o-linear-gradient(right, #0570D8 50%, #3599FB 100%); background: linear-gradient(270deg, #0570D8 50%, #3599FB 100%); }
+
+.address-section--inner { background: url(../images/adress-bg.svg) center bottom no-repeat; background-size: 100% auto; padding: 3.125rem 0 6.25rem; }
+
+.address-section .heading { color: white; margin-bottom: 1.875rem; }
+
+.address-section h3 { color: white; margin-top: 1.25rem; }
+
+.address-section h3 img { width: 52px; }
+
+@media screen and (max-width: 767px) { .address-section h3 img { width: 30px; } }
+
+.address-section h3 span { position: relative; margin-left: 10px; font-size: 1.5rem; }
+
+.address-section h3 span:after { position: absolute; width: 30px; height: 3px; left: 0px; bottom: -5px; content: ""; background: #F7A973; }
+
+.address-section address { color: white; }
+
+@media screen and (max-width: 990px) { .address-section address:first-child br { display: none; } }
+
+.address-section address a { color: white; word-break: break-all; }
+
+/**/
 .services--section.development-services .container-xl { margin-top: 0; padding-top: 3.125rem; padding-bottom: 3.125rem; }
 
 .development-services .full-box { overflow: hidden; margin-top: 2.5rem; }
@@ -4122,7 +4169,7 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 .capabilties-section--boxes { padding-top: 3.125rem; }
 
-.capabilties-section--box { border-radius: 15px; overflow: hidden; }
+.capabilties-section--box { border-radius: 15px; padding-bottom: 10px; }
 
 @media screen and (max-width: 767px) { .capabilties-section--box { margin: 10px 0; } }
 
@@ -4131,6 +4178,8 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 .capabilties-section--box p { font-size: 1rem; margin-bottom: 5px; }
 
 .capabilties-section--box li { padding: 1rem 1.5rem; margin: 2px 0; min-height: 145px; }
+
+.capabilties-section--box li:hover { -webkit-box-shadow: 0px 14px 30px 10px rgba(0, 0, 0, 0.1); box-shadow: 0px 14px 30px 10px rgba(0, 0, 0, 0.1); }
 
 @media screen and (width: 768px) { .capabilties-section--box li { min-height: 170px; } }
 

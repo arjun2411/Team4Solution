@@ -1,0 +1,125 @@
+/**/
+.services--section {
+    background-size: 23%;
+    background-position: left bottom, 112.6% top;
+
+    &.contact-section {
+        .container-xl {
+            margin-top: 0;
+            padding-top: $txt-50;
+            padding-bottom: $txt-50;
+
+            @media screen and (max-width: 767px) {
+
+                padding-top: $txt-10;
+                padding-bottom: $txt-50;
+
+            }
+        }
+
+        .full-box {
+            overflow: hidden;
+            margin-top: $txt-40;
+            padding: $txt-50+$txt-20 $txt-30;
+            text-align: center;
+
+            @media screen and (max-width: 767px) {
+
+                padding: $txt-20 $txt-30;
+
+            }
+        }
+    }
+}
+
+.contact-section {
+
+    .tellus-section--form {
+        h2 {
+            margin: 0 0 $txt-30;
+        }
+
+        .form-group {
+            margin-bottom: $txt-30;
+
+            textarea.form-control {
+                height: 100px;
+            }
+
+            .btn-primary {
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                display: flex;
+            }
+        }
+    }
+}
+
+.address-section {
+    background: linear-gradient(270deg, #0570D8 50%, #3599FB 100%);
+
+
+    &--inner {
+        background: url(../images/adress-bg.svg) center bottom no-repeat;
+        background-size: 100% auto;
+        padding: $txt-50 0 $txt-50+$txt-50;
+    }
+
+    .heading {
+        color: white;
+        margin-bottom: $txt-30;
+    }
+
+    h3 {
+        color: white;
+        margin-top: $txt-20;
+
+        img {
+            width: 52px;
+
+            @media screen and (max-width: 767px) {
+
+                width: 30px;
+
+            }
+        }
+
+        span {
+            position: relative;
+            margin-left: 10px;
+            font-size: $txt-24;
+
+            &:after {
+                position: absolute;
+                width: 30px;
+                height: 3px;
+                left: 0px;
+                bottom: -5px;
+                content: "";
+
+                background: #F7A973;
+            }
+        }
+    }
+
+    address {
+        color: white;
+
+        &:first-child {
+            @media screen and (max-width: 990px) {
+                br {
+                    display: none;
+                }
+            }
+
+
+        }
+
+        a {
+            color: white;
+            word-break: break-all;
+        }
+    }
+}
