@@ -3740,7 +3740,9 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 .testimonial-section--logos { margin-top: 3.125rem; }
 
-.testimonial-section--logo img { height: 4.375rem; margin: 1.25rem; }
+.testimonial-section--logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.testimonial-section--logo img { max-width: 100px; margin: 1.25rem; }
 
 @media screen and (max-width: 990px) { .testimonial-section--logo img { margin: 0.625rem; } }
 
@@ -3833,6 +3835,10 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 .white-box img { border-radius: 0.938rem 0.938rem 0 0; width: 100%; }
 
 .white-box .date { font-size: 1rem; color: #A5B7D2; font-weight: 700; margin-bottom: 0.313rem; }
+
+.swiper-clients-container { width: 100%; max-width: 1024px; overflow: hidden; margin-left: auto; margin-right: auto; }
+
+.swiper-clients-container .swiper-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 /*services page css*/
 .hero-section.not-slider .carousel-item { min-height: 374px; }
