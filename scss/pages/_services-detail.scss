@@ -159,6 +159,7 @@
             padding: $txt-16 $txt-24;
             margin: 2px 0;
             min-height: 145px;
+            transition: all ease .3s;
 
             &:hover {
                 box-shadow: 0px 14px 30px 10px rgba(0, 0, 0, 0.1);
