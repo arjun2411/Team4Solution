@@ -60,4 +60,31 @@
             }
         }
     }
+
+    &:after {
+        content: "";
+        display: block;
+        background-color: transparent;
+        width: 0;
+        height: 3px;
+        transition: all ease-in .5s;
+        margin-top: 5px;
+
+    }
+
+    &.text-center {
+        &:after {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+    }
+
+    &:hover {
+        &:after {
+            width: 120px;
+            background-color: $grey-title;
+        }
+    }
 }

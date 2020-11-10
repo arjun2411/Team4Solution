@@ -115,5 +115,19 @@
 
     .responsive-tabs-container.accordion-lg .accordion-link {
         display: block;
+    }
 }
+
+
+@keyframes wave {
+
+    50%,
+    75% {
+        transform: scale(1.5);
+    }
+
+    80%,
+    100% {
+        opacity: 0;
+    }
 }

@@ -537,6 +537,53 @@
     padding: $txt-50+$txt-10 0;
 
     background-size: cover;
+
+    .white-box {
+        position: relative;
+
+        overflow-y: hidden;
+        padding-bottom: 118px;
+
+        .date-heading {
+            transform: translate3d(0, -150%, 0);
+            transition: transform 300ms;
+            background: white;
+        }
+
+        .white-box--inner {
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            transition: transform 300ms;
+            background-color: white;
+            transform: translate3d(0, 100%, 0);
+
+            .detail-read {
+                flex-grow: 1;
+                padding-top: $txt-5;
+                opacity: 0;
+                transition: opacity 500ms 100ms;
+            }
+        }
+
+        &:hover,
+        &:focus {
+
+            .white-box--inner {
+
+                transform: translate3d(0, 30%, 0);
+
+                .date-heading {
+                    transform: translate3d(0, 10%, 0);
+                }
+
+                .detail-read {
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
 
 // Unstoppable
@@ -550,7 +597,12 @@
         padding: $txt-10 $txt-20;
         transition: transform .2s;
         margin: $txt-20 $txt-50;
-        border-radius: $txt-5;
+        border-radius: 0;
+        position: relative;
+        border-width: 1px;
+        border-style: solid;
+        border-color: transparent;
+
 
         @media screen and (max-width: 990px) {
             margin: $txt-10 $txt-20;
@@ -558,11 +610,59 @@
 
         img {
             width: $txt-50+$txt-40;
+            filter: saturate(0);
+            opacity: .9;
+        }
+
+        &:after {
+            content: "";
+            width: 90%;
+            height: 120%;
+            background: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            top: -10%;
+            z-index: -1;
+        }
+
+        &:before {
+            content: "";
+            width: 120%;
+            height: 80%;
+            background: white;
+            position: absolute;
+            left: -10%;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            top: 10%;
+            z-index: -1;
         }
 
         &:hover {
-            transform: scale(1.5);
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            // z-index: 10;
+            transform: scale(1.2);
+            // box-shadow: 0px 0px 10px rgba($dark-grey, 0.1);
+            border-width: 1px;
+            border-style: solid;
+            border-color: $dark-grey;
+
+
+
+
+
+            img {
+                width: $txt-50+$txt-40;
+                filter: none;
+                opacity: 1;
+            }
+
+
+
+
         }
     }
 
@@ -594,6 +694,22 @@
         box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
         margin: $txt-50 0;
+        position: reative;
+        overflow: hidden;
+        transition: all.3s ease;
+
+        &:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.3);
+
+            h2 {
+
+                color: $blue;
+
+            }
+        }
+
+
 
         &:nth-child(2) {
             left: -$txt-50;
@@ -636,6 +752,8 @@
 
 
 // blog card
+
+
 
 .white-box {
     background: #FFFFFF;

@@ -231,12 +231,38 @@
     padding: $txt-30 $txt-15;
     text-align: center;
     height: 100%;
+    transform: scale(0.98);
+
+    transition: 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 0px 4px rgba(250, 248, 248, 0.6);
+
+        .whychoose-box-icon img {
+            transform: translateX(0px) rotate(360deg);
+
+
+
+        }
+
+
+
+    }
 
     &-icon {
         margin-bottom: $txt-24;
 
+
+
+
         img {
             width: auto;
+            transition: .5s;
+            position: relative;
+
+
         }
 
 
@@ -256,8 +282,54 @@
 /*tool tech*/
 .tooltech--section {
     background: $white url(../images/tool-bg.jpg) right center no-repeat;
-    background-size: cover;
-    padding: $txt-50 0;
+    background-size: auto;
+
+
+    &--inner {
+
+        background: url(../images/slc-bg.jpg) left top no-repeat;
+        background-size: 40% 100%;
+
+
+        @media screen and (min-width: 1601px) {
+            background-size: 45% 100%;
+        }
+    }
+
+    &--left {
+        background: url(../images/slc-bg.jpg) left top no-repeat;
+        background-size: cover;
+
+        padding: 0 $txt-50;
+
+        .t-icon-logo {
+            padding: 10px;
+            opacity: 0.8;
+        }
+
+        .sticky-outer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: $txt-20 0;
+
+            &--inner {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 30%;
+
+                transform: translate(-30%, 0%, 0, 0);
+                padding: 0 $txt-40;
+
+            }
+        }
+    }
+
+    &--right {
+        padding: $txt-50 0;
+    }
 
     .hedding-and-detail {
         margin-bottom: $txt-30;
@@ -269,14 +341,14 @@
 }
 
 .tool-card {
-    background: #F9F9FA url(../images/tool-box-shape.svg) right top no-repeat;
+    /* background-image: #F9F9FA url(../images/tool-box-shape.svg)  no-repeat;
     border: 1px solid rgba(5, 112, 216, 0.1);
-    box-sizing: border-box;
-    box-shadow: 1px 4px 14px rgba(0, 0, 0, 0.08);
     border-radius: 15px;
-    padding: $txt-20;
+    box-shadow: 1px 4px 14px rgba(0, 0, 0, 0.08);*/
 
-
+    padding: $txt-20 $txt-30;
+    border-bottom: 1px solid rgba(5, 112, 216, 0.1);
+    box-sizing: border-box;
     height: 100%;
 
 
@@ -321,10 +393,40 @@
         flex-shrink: 0;
         width: 49%;
         display: inline-flex;
-        padding: $txt-3 $txt-5;
+        padding: $txt-5 $txt-5;
         align-items: flex-start;
+        padding-left: 25px !important;
 
 
+
+        span {
+            font-size: $txt-30;
+            color: $orange;
+            position: absolute;
+            left: 0;
+            text-align: left;
+            width: 25px;
+            height: 25px;
+            margin-right: $txt-5;
+            line-height: 19px;
+
+            &.small-font-icon2 {
+                font-size: $txt-24;
+            }
+
+            &.small-font-icon1 {
+                font-size: $txt-20;
+            }
+
+            &.small-img-icon {
+                font-size: 0;
+
+            }
+        }
+    }
+
+    .formutiline li i {
+        top: 8px;
     }
 }
 
@@ -489,6 +591,34 @@
                 justify-content: center;
                 align-items: center;
 
+                position: relative;
+                text-decoration: none;
+                transition: 0.2s transform ease-in-out;
+                will-change: transform;
+                z-index: 0;
+                overflow: hidden;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    transform: translate(0, -100%) rotate(0deg);
+                    transform-origin: top bottom;
+                    transition: .2s transform ease-out;
+                    will-change: transform;
+                    z-index: -1;
+                    background: linear-gradient(270.1deg, #0570D8 0.08%, #3599FB 99.92%);
+                    ;
+                }
+
+                &:hover:after {
+                    transform: translate(0, 0);
+                }
+
                 @media screen and (max-width: 990px) {
                     flex-direction: column;
 
@@ -517,10 +647,20 @@
 
             }
 
+            .nav-link:hover {
+                will-change: transform;
+                color: $white;
+
+                i:before {
+                    color: $white;
+                }
+            }
+
             .nav-link.active {
                 background: linear-gradient(270.1deg, #0570D8 0.08%, #3599FB 99.92%);
                 box-shadow: 0px 3px 14px 1px rgba(0, 0, 0, 0.1);
                 color: $white;
+                will-change: transform;
 
                 i:before {
                     color: $white;
@@ -612,3 +752,114 @@
         }
     }
 }
+
+.lifecycle--section-left:before {
+    opacity: 0;
+
+    @media screen and (max-width: 1025px) {
+
+        opacity: 1;
+    }
+}
+
+.sdl-graphics-outer {
+    position: absolute;
+    width: 600px;
+    top: 0;
+    left: -98px;
+
+    @media screen and (max-width: 1025px) {
+
+        display: none;
+    }
+}
+
+.sdl-graphics {
+    position: relative;
+
+    .sdl-steps {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        width: 80px;
+        flex-direction: column;
+        justify-content: flex-end;
+        z-index: 99;
+
+
+        img[class^="sdl-step"] {
+            // position: absolute;
+            //box-shadow: 3px 4px 5px #ccc;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            transition: all ease .2s;
+
+
+
+            &:hover {
+                transform: scale(1.2);
+                padding: 2px;
+                border: 2px solid $grey-title;
+            }
+        }
+
+        .sdl-step_1 {
+            top: 80px;
+            left: -50px;
+            position: absolute;
+        }
+
+        .sdl-step_2 {
+            top: 156px;
+            left: 5px;
+            position: absolute;
+        }
+
+        .sdl-step_3 {
+            top: 245px;
+            left: 34px;
+            position: absolute;
+        }
+
+        .sdl-step_4 {
+            top: 335px;
+            left: 30px;
+            position: absolute;
+        }
+
+        .sdl-step_5 {
+            top: 422px;
+            left: -12px;
+            position: absolute;
+        }
+
+        .sdl-step_6 {
+            top: 490px;
+            left: -77px;
+            position: absolute;
+        }
+
+        .sdl-step_7 {
+            top: 525px;
+            left: -163px;
+            position: absolute;
+        }
+    }
+
+}
+
+
+// @keyframes countAnim {
+
+//     0%,
+//     20%,
+//     100% {
+//         opacity: 1;
+//     }
+
+//     10% {
+//         opacity: .5;
+//     }
+// }
