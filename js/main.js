@@ -346,3 +346,8 @@ var swiper = new Swiper('.swiper-clients-container', {
 		},
 	}
 });
+
+$(function () {
+	$('#verticalTab').jqTabs();
+
+});
