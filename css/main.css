@@ -3833,11 +3833,13 @@ select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padd
 
 @media screen and (max-width: 990px) { .tfs-header .navbar-light { height: 60px; } }
 
-.tfs-header .navbar-light .desktop-menu .dropdown { position: static; }
+.tfs-header .navbar-light .desktop-menu .dropdown.dropdown-with-full-width { position: static; }
 
-@media screen and (min-width: 990px) { .tfs-header .navbar-light .desktop-menu .dropdown:hover .dropdown-menu { display: block; } }
+.tfs-header .navbar-light .desktop-menu .dropdown.dropdown-with-full-width .dropdown-menu { width: 100%; }
 
-.tfs-header .navbar-light .desktop-menu .dropdown-menu { width: 100%; padding: 0.938rem; background-size: 100% auto; margin-top: -2px; }
+@media screen and (min-width: 990px) { .tfs-header .navbar-light .desktop-menu .dropdown:hover .dropdown-menu { display: block; min-width: 320px; } }
+
+.tfs-header .navbar-light .desktop-menu .dropdown-menu { padding: 0.938rem; background-size: 100% auto; margin-top: -2px; }
 
 @media screen and (min-width: 990px) { .tfs-header .navbar-light .desktop-menu .dropdown-menu { padding-bottom: 100px; background: #FFFFFF url(../images/unstoppable.svg) left bottom no-repeat; } }
 

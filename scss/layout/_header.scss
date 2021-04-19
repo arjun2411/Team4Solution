@@ -36,11 +36,20 @@
 
         .desktop-menu {
             .dropdown {
-                position: static;
+                &.dropdown-with-full-width {
+                    position: static;
+
+                    .dropdown-menu {
+                        width: 100%;
+                    }
+                }
 
                 &:hover .dropdown-menu {
+
                     @media screen and (min-width: 990px) {
                         display: block;
+                        min-width: 320px;
+
                     }
                 }
 
@@ -48,7 +57,7 @@
             }
 
             .dropdown-menu {
-                width: 100%;
+
                 padding: $txt-15;
 
                 background-size: 100% auto;
